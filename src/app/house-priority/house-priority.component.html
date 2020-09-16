@@ -1,0 +1,88 @@
+<div class="priority">
+  <!--<h3 class="step-heading">{{'Priority.label' | translate}}</h3>-->
+  <div class="d-flex head">
+    <h3 class="step-heading">{{'priority.label' | translate}}</h3>
+    <p class="float-right" style="color: gray font-family: 'poppins';;">STEP 5/8</p>
+  </div>
+  <p style=" font-family: 'poppins';">{{'priority.content' | translate}}</p>
+  <div class="spacer-1"></div>
+  <div class="mb-2 ">
+    <!--<tabset [justified]="true">-->
+    <!--<tab id="tab1" *ngFor="let category of priorityCategories">-->
+    <!--<ng-template tabHeading>-->
+    <!--<span class="heading">{{category.label}}</span>-->
+    <!--</ng-template>-->
+    <!--<div class="spacer-1"></div>-->
+    <!--<ul class="list-group">-->
+    <!--<li class="list-group-item float-right ml-2"-->
+    <!--style="cursor: pointer;color:black" title="Select Priority"-->
+    <!--*ngFor="let item of category.list">-->
+    <!--<span><input (click)="selectItem(category,item.key)"-->
+    <!--[ngClass]="{'priority-selected': item.isSelected, 'priority-checked': item.isChecked }"-->
+    <!--class="check mr-2 float-left" type="radio" [checked]="item.isChecked"></span>-->
+    <!--{{item.label}}-->
+    <!--</li>-->
+
+    <!--</ul>-->
+    <!--</tab>-->
+    <!--</tabset>-->
+
+    <mat-tab-group>
+      <mat-tab *ngFor="let category of priorityCategories" [label]="category.label">
+        <div class="spacer-1"></div>
+        <ul class="list-group">
+          <li class="list-group-item float-right ml-2"
+              style="cursor: pointer;color:black" title="Select Priority"
+              *ngFor="let item of category.list">
+            <label class="radio-but">
+            <input type="radio" class="radio-but__input" (click)="selectItem(category,item.key)"
+            [ngClass]="{'priority-selected': item.isSelected, 'priority-checked': item.isChecked }"
+            [checked]="item.isSelected" >
+            <span class="radio-but__control"></span>
+            <span class="radio-but__label">{{item.label}}</span>
+            </label>
+          </li>
+
+        </ul>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div class="selected-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 px-0">
+          <div class="card">
+            <div class="card-header pt-2 pb-1">
+              <label><b>{{'priority.selected' | translate}}</b></label>
+            </div>
+            <div class="card-body px-1" *ngIf="selectedList.length <= 0">
+              <div class="no-item ml-2">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a style="color: #C3C6C6">{{'priority.click' | translate}}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body px-1" *ngIf="selectedList.length > 0">
+              <div>
+                <ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
+                  <li class="list-group-item" *ngFor="let item of selectedList" cdkDrag>
+                    <span class="float-right" (click)="removePriority(item)" style="cursor: pointer">
+                      <fa-icon [icon]="trash" [classList]="['text-danger']" title="remove"></fa-icon>
+                    </span>
+                    {{item.label}}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-3"></div>
+  <div class="text-center mt-3" *ngIf="selectedList.length>0">
+    <button class="btn btn-primary w-100" (click)="submitForm()">{{'Continue' | translate}}</button>
+  </div>
+</div>

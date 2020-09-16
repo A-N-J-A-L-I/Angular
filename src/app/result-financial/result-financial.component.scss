@@ -1,0 +1,77 @@
+.mobile_btn {
+  display: none;
+}
+.title-header {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'poppins';
+}
+select {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+}
+
+option {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  color: #677171;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 960px) {
+  .mobile_btn {
+    display: block;
+  }
+  .radio-btn {
+    display: none;
+  }
+}
+.fa-2x {
+  font-size: 1.5em;
+}
+
+.infoIcon {
+  color: #B2D7FF;
+
+  &.active {
+    color: #007AFF;
+  }
+}
+
+.card {
+  background: green;
+  color: white;
+  height: 50px;
+  border-radius: 5px;
+}
+.card-item {
+  //padding-top: 10px;
+  font-size: 15px;
+  font-family: 'poppins';
+  font-weight: 600;
+
+}
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+  //.barchart {
+  //  height: 200px !important;
+  //}
+  .card-item {
+    font-size: 12px;
+  }
+}
+
+.bar-chart {
+  width: 100%;
+  //height: 300px;
+}
+.row.remove-extra-space {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+}

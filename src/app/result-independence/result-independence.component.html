@@ -1,0 +1,202 @@
+<div class="container independence">
+  <p class="title-header h5 mb-2 mt-3">{{'independence.content' | translate }}</p>
+  <!--// Desktop radio button for storage-->
+  <div class="row ml-0 mt-3 radio-btn  flex-column">
+    <div class="radio-btn1 d-flex">
+      <div class="radio-btn1 d-flex">
+        <label class="radio-button">
+          <input type="radio" class="radio-button__input" [(ngModel)]="storage" value="PV-without-storage"
+                 name="PV-select"
+                 (change)="changeSeason()" >
+          <span class="radio-button__control"></span>
+          <span class="radio-button__label" style="color: #677171;  font-family: 'poppins';">{{'pv-without-storage' | translate }}</span>
+        </label>
+        <!--<img class="ml-0 mb-2" tooltip="Photovoltaic system without battery"-->
+             <!--src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZDVkNWQ1OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImluZm9faWNvbiIgY2xhc3M9ImNscy0xIiBkPSJNMTAtLjAwNWExMCwxMCwwLDEsMCwxMCwxMEExMCwxMCwwLDAsMCwxMC0uMDA1Wm0yLjA4MiwxNS41cS0wLjc3MS4zLTEuMjMyLDAuNDY0YTMuMjQ3LDMuMjQ3LDAsMCwxLTEuMDY4LjE2LDIuMTM3LDIuMTM3LDAsMCwxLTEuNDU0LS40NTZBMS40NzUsMS40NzUsMCwwLDEsNy44MDYsMTQuNWE0LjI0LDQuMjQsMCwwLDEsLjAzOC0wLjU1OGMwLjAyNi0uMTg5LjA2OC0wLjQsMC4xMjUtMC42NDJsMC42NDQtMi4yNzVjMC4wNTctLjIyLjEwNi0wLjQyNywwLjE0NS0wLjYyMWEyLjc1MywyLjc1MywwLDAsMCwuMDU3LTAuNTM2LDAuODI0LDAuODI0LDAsMCwwLS4xNzktMC42MDdBMS4wMTgsMS4wMTgsMCwwLDAsNy45NDcsOS4xYTEuOCwxLjgsMCwwLDAtLjUxMi4wNzZjLTAuMTc0LjA1My0uMzI1LDAuMS0wLjQ0OCwwLjE0OWwwLjE3LS43UTcuNzksOC4zNjEsOC4zNjgsOC4xNzhBMy41NzcsMy41NzcsMCwwLDEsOS40Niw3Ljk5M2EyLjA5MSwyLjA5MSwwLDAsMSwxLjQzMy40NDksMS40OTIsMS40OTIsMCwwLDEsLjUsMS4xNjVxMCwwLjE0OS0uMDM1LjUyM2EzLjUyOCwzLjUyOCwwLDAsMS0uMTI5LjY4N2wtMC42NDEsMi4yNjlxLTAuMDc4LjI3NC0uMTQxLDAuNjIzYTMuMjY2LDMuMjY2LDAsMCwwLS4wNjIuNTMyLDAuNzYzLDAuNzYzLDAsMCwwLC4yLjYxNiwxLjEzMywxLjEzMywwLDAsMCwuNy4xNjQsMS45OTMsMS45OTMsMCwwLDAsLjUzMS0wLjA4MywyLjkzNCwyLjkzNCwwLDAsMCwuNDI4LTAuMTQ0Wm0tMC4xMTMtOS4yMWExLjUzLDEuNTMsMCwwLDEtMS4wOC40MTZBMS41NDgsMS41NDgsMCwwLDEsOS44LDYuMjg0YTEuMzU5LDEuMzU5LDAsMCwxLDAtMi4wMjMsMS41MzUsMS41MzUsMCwwLDEsMS4wODQtLjQyMSwxLjUxOCwxLjUxOCwwLDAsMSwxLjA4LjQyMUExLjM2NCwxLjM2NCwwLDAsMSwxMS45NjQsNi4yODRaIi8+Cjwvc3ZnPgo=">-->
+        <span class="ml-0 mt-1" ><i class="fas fa-info-circle fa-2x infoIcon" tooltip="Photovoltaic system without battery"  [ngClass]="{'active' : storage === 'PV-without-storage'}"></i></span>
+      </div>
+      <div class="radio-btn1 d-flex ml-5">
+        <label class="radio-button">
+          <input type="radio" class="radio-button__input" [(ngModel)]="storage" value="PV-with-storage"
+                 name="PV-select"
+                 (change)="changeSeason()" >
+          <span class="radio-button__control"></span>
+          <span class="radio-button__label" style="color: #677171;  font-family: 'poppins';">{{'PV-with-storage' | translate }}</span>
+        </label>
+        <!--<img class="ml-1 mb-2" tooltip="Photovoltaic system with battery"-->
+             <!--src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZDVkNWQ1OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImluZm9faWNvbiIgY2xhc3M9ImNscy0xIiBkPSJNMTAtLjAwNWExMCwxMCwwLDEsMCwxMCwxMEExMCwxMCwwLDAsMCwxMC0uMDA1Wm0yLjA4MiwxNS41cS0wLjc3MS4zLTEuMjMyLDAuNDY0YTMuMjQ3LDMuMjQ3LDAsMCwxLTEuMDY4LjE2LDIuMTM3LDIuMTM3LDAsMCwxLTEuNDU0LS40NTZBMS40NzUsMS40NzUsMCwwLDEsNy44MDYsMTQuNWE0LjI0LDQuMjQsMCwwLDEsLjAzOC0wLjU1OGMwLjAyNi0uMTg5LjA2OC0wLjQsMC4xMjUtMC42NDJsMC42NDQtMi4yNzVjMC4wNTctLjIyLjEwNi0wLjQyNywwLjE0NS0wLjYyMWEyLjc1MywyLjc1MywwLDAsMCwuMDU3LTAuNTM2LDAuODI0LDAuODI0LDAsMCwwLS4xNzktMC42MDdBMS4wMTgsMS4wMTgsMCwwLDAsNy45NDcsOS4xYTEuOCwxLjgsMCwwLDAtLjUxMi4wNzZjLTAuMTc0LjA1My0uMzI1LDAuMS0wLjQ0OCwwLjE0OWwwLjE3LS43UTcuNzksOC4zNjEsOC4zNjgsOC4xNzhBMy41NzcsMy41NzcsMCwwLDEsOS40Niw3Ljk5M2EyLjA5MSwyLjA5MSwwLDAsMSwxLjQzMy40NDksMS40OTIsMS40OTIsMCwwLDEsLjUsMS4xNjVxMCwwLjE0OS0uMDM1LjUyM2EzLjUyOCwzLjUyOCwwLDAsMS0uMTI5LjY4N2wtMC42NDEsMi4yNjlxLTAuMDc4LjI3NC0uMTQxLDAuNjIzYTMuMjY2LDMuMjY2LDAsMCwwLS4wNjIuNTMyLDAuNzYzLDAuNzYzLDAsMCwwLC4yLjYxNiwxLjEzMywxLjEzMywwLDAsMCwuNy4xNjQsMS45OTMsMS45OTMsMCwwLDAsLjUzMS0wLjA4MywyLjkzNCwyLjkzNCwwLDAsMCwuNDI4LTAuMTQ0Wm0tMC4xMTMtOS4yMWExLjUzLDEuNTMsMCwwLDEtMS4wOC40MTZBMS41NDgsMS41NDgsMCwwLDEsOS44LDYuMjg0YTEuMzU5LDEuMzU5LDAsMCwxLDAtMi4wMjMsMS41MzUsMS41MzUsMCwwLDEsMS4wODQtLjQyMSwxLjUxOCwxLjUxOCwwLDAsMSwxLjA4LjQyMUExLjM2NCwxLjM2NCwwLDAsMSwxMS45NjQsNi4yODRaIi8+Cjwvc3ZnPgo=">-->
+        <span class="ml-0 mt-1" ><i class="fas fa-info-circle fa-2x infoIcon" tooltip="Photovoltaic system with battery" [ngClass]="{'active' : storage === 'PV-with-storage'}"></i></span>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!--// Small Device dropdown for storage-->
+  <div class="row mobile_btn  mb-3 mt-4">
+    <div class="col-12 w-100">
+      <select id="pv" (change)="changeSeason()" [(ngModel)]="storage" name="pv">
+        <option value="PV-without-storage" style="color: #677171;   font-family: 'poppins';">{{'pv-without-storage' | translate }}</option>
+        <option value="PV-with-storage" style="color: #677171;   font-family: 'poppins';">{{'PV-with-storage' | translate }}</option>
+      </select>
+
+    </div>
+  </div>
+
+  <!--// All card to show data-->
+  <div class="row all-season mb-5">
+    <div class="cards-list">
+
+      <div class="card whole-year">
+        <div class="row mx-auto d-flex mt-3">
+          <img src="./assets/season/year.png">
+        </div>
+        <div class="graph mt-2 mb-2">
+          <circle-progress
+            [percent]="yearPercent"
+            [radius]="radius"
+            [outerStrokeColor]="'#707070'"
+            [innerStrokeColor]="'#D9DDDF'"
+            [titleFontWeight]="90"
+            [titleColor]= "'#707070'"
+            [unitsColor]="'#707070'"
+            [titleFontSize]="titlefont"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="10"
+            [space]="-10"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          ></circle-progress>
+        </div>
+        <div class="title title-year">
+          <p>{{'season.whole-year' | translate}}</p>
+        </div>
+      </div>
+
+      <div class="card spring">
+        <div class="row mx-auto d-flex mt-3">
+          <img src="./assets/season/spring.png">
+        </div>
+        <div class="graph mt-2 mb-2">
+          <circle-progress
+            [percent]="springPercent"
+            [radius]="radius"
+            [outerStrokeColor]="'#2F9E6A'"
+            [innerStrokeColor]="'#CEF1D3'"
+            [titleFontWeight]="90"
+            [titleColor]= "'#2F9E6A'"
+            [unitsColor]="'#2F9E6A'"
+            [titleFontSize]="titlefont"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="10"
+            [space]="-10"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle]="false"
+          ></circle-progress>
+        </div>
+        <div class="title title-spring">
+          <p>{{'season.spring' | translate}}</p>
+        </div>
+      </div>
+
+      <div class="card summer">
+        <div class="row mx-auto d-flex mt-3">
+          <img src="./assets/season/summer.png">
+        </div>
+        <div class="graph mt-2 mb-2">
+          <circle-progress
+            [percent]="summerPercent"
+            [radius]="radius"
+            [outerStrokeColor]="'#FFCC00'"
+            [innerStrokeColor]="'#FFF3C2'"
+            [titleColor]= "'#FFCC00'"
+            [unitsColor]="'#FFCC00'"
+            [titleFontWeight]="90"
+            [titleFontSize]="titlefont"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="10"
+            [space]="-10"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle]="false"
+          ></circle-progress>
+        </div>
+        <div class=" title title-summer">
+          <p>{{'season.summer' | translate}}</p>
+        </div>
+      </div>
+
+      <div class="card autumn">
+        <div class="row mx-auto d-flex mt-3">
+          <img src="./assets/season/autumn.png">
+        </div>
+        <div class="graph mt-2 mb-2">
+          <circle-progress
+            [percent]="autumnPercent"
+            [radius]="radius"
+            [outerStrokeColor]="'#B16848'"
+            [innerStrokeColor]="'#E9D5CB'"
+            [titleColor]= "'#B16848'"
+            [unitsColor]="'#B16848'"
+            [titleFontWeight]="90"
+            [titleFontSize]="titlefont"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="10"
+            [space]="-10"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle]="false"
+          ></circle-progress>
+        </div>
+        <div class="title title-autumn">
+          <p>{{'season.autumn' | translate}}</p>
+        </div>
+      </div>
+      <div class="card winter">
+        <div class="row mx-auto d-flex mt-3">
+          <img src="./assets/season/winter.png">
+        </div>
+        <div class="graph mt-2 mb-2">
+          <circle-progress
+            [percent]="winterPercent"
+            [radius]="radius"
+            [outerStrokeColor]="'#64C7DC'"
+            [innerStrokeColor]="'#D3EFF5'"
+            [titleFontWeight]="90"
+            [unitsColor]="'#64C7DC'"
+            [titleFontSize]="titlefont"
+            [titleColor]= "'#64C7DC'"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="10"
+            [space]="-10"
+            [animation]="true"
+            [animationDuration]="300"
+            [showSubtitle]="false"
+          ></circle-progress>
+        </div>
+        <div class="title title-winter">
+          <p>{{'season.winter' | translate}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--<div class="row mb-3 btnnext">-->
+    <!--<div class="col-12">-->
+      <!--<div class="next-button mb-3 float-right">-->
+        <!--<b type="button" class="text-uppercase mr-2" style="cursor: pointer" (click)="next()">NEXT</b>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+</div>
+<!--<div class="row mb-3 btnnext">-->
+  <!--<div class="col-12">-->
+    <!--<div class="next-button mb-3 float-right">-->
+      <!--<b type="button" class="text-uppercase mr-2" style="cursor: pointer" (click)="next()">NEXT</b>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

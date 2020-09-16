@@ -1,0 +1,151 @@
+{
+  "To-change": "[pt]EDIT",
+  "Continue": "[pt]Continue",
+  "Contact": "[pt]Contact",
+  "Back": "[pt]Back",
+  "Preparing-Results": "[pt]Fetching  Results...",
+  "content": "[pt]We are now calculating your personal solar energy system for the next 25 years. This is done on the",
+  "content1": "[pt]basis of",
+  "content2": "[pt]local energy prices, irradiation data and a typical consumption profile for your house. This gives you an",
+  "content3": "[pt]excellent basis for your decision.",
+  "pv-without-storage": "[pt]PV Without Storage",
+  "PV-with-storage": "[pt]PV With Storage",
+  "variation-selection": "[pt]Variation Selection",
+  "season": {
+    "whole-year": "[pt]Whole year",
+    "autumn": "[pt]autumn",
+    "winter": "[pt]winter",
+    "summer": "[pt]summer",
+    "spring": "[pt]spring"
+  },
+  "independence": {
+    "label": "[pt]Independence",
+    "content": "[pt]How much of your electricity needs comes directly from your roof?"
+  },
+  "consumption1": {
+    "label": "[pt]Consumption",
+    "content": "[pt]How much of your electricity needs comes directly from your roof?",
+    "solar-system": "[pt]Solar  system",
+    "battery-size": "[pt]Battery size",
+    "annual-production": "[pt]Annual production",
+    "electricity-generation-costs": "[pt]Electricity generation costs:"
+  },
+  "typical-day": {
+    "label": "[pt]A Typical Day",
+    "content": "[pt]A typical day",
+    "production": "[pt]Solar Production",
+    "consumption": "[pt]Self Consumption",
+    "battery": "[pt]Battery charging",
+    "independence": "[pt]Independence"
+  },
+  "economic": {
+    "label": "[pt]Summary",
+    "content": "[pt]System summary",
+    "solar-system": "[pt]Solar  system:",
+    "battery-size": "[pt]Battery size:",
+    "annual-production": "[pt]Annual production:",
+    "electricity-generation-costs": "[pt]Electricity generation costs:"
+  },
+  "sustainability": {
+    "label": "[pt]Sustainability",
+    "content": "[pt]An important contribution to the environment",
+    "globe": "[pt]Drive your car ",
+    "globe1": "[pt] km around the world.",
+    "foot": "[pt]Reduce your CO2 footprints by",
+    "tree": "[pt]Save the same amount of CO2 as you consume ",
+    "tree1": "[pt]trees per year."
+  },
+  "how-futher": {
+    "label": "[pt]How Futher",
+    "content": "[pt]Thank you very much for your interest",
+    "content1": "[pt]You now know what the sun can do for you. We would be happy to provide you with a quotation for your future solar system."
+  },
+  "Roof-area": {
+    "label": "[pt]Roof Area",
+    "content": "[pt]Mark the entire roof area of your house with the pencil",
+    "Floor-plan": "[pt]Floor plan:",
+    "Manual-label": "[pt]If you know the usable roof area, you can enter it manually:",
+    "Manual-entry": "[pt]Manual entry:",
+    "Usable-area": "[pt]Usable Area"
+  },
+  "House-type": {
+    "label": "[pt]House-type",
+    "label1": "[pt]House Type",
+    "content": "[pt]Choose your house type.",
+    "Occupy-two-sides": "[pt]Occupy Both Sides"
+  },
+  "Roof-pitch": {
+    "label": "[pt]Roof pitch",
+    "label1": "[pt]Roof Pitch",
+    "content": "[pt]Choose your roof pitch or enter it manually.",
+    "Manual-input": "[pt]Manual input:",
+    "placeholder": "[pt]Enter the roof pitch manually"
+  },
+  "alignment": {
+    "Orientation": "[pt]Orientation",
+    "label": "[pt]Alignment",
+    "content": "[pt]Align your house as per the satellite pic.",
+    "slider-content": "[pt]Use the slider to rotate roof."
+  },
+  "priority": {
+    "Priority": "[pt]Priority",
+    "label": "[pt]Priority list",
+    "content": "[pt] Select your motivation to use solar by priority.",
+    "selected": "[pt]Selected Priority",
+    "click": "[pt]Click to select your priority"
+  },
+  "Consumption": {
+    "label": "[pt]Annual Consumption",
+    "content": "[pt]Average Consumption",
+    "num-of-people": "[pt]Number of people in your household:",
+    "num-of-people-placeholder": "[pt]Number of people in your house",
+    "yearly-consumption": "[pt]Yearly Energy Consumption",
+    "supplier": "[pt]Select Energy Supplier",
+    "skip": "[pt]Skip"
+  },
+  "Hot-water": {
+    "label": "[pt]Hot water",
+    "label1": "[pt]Hot Water",
+    "content": "[pr]How do you heat your hot water?",
+    "Electric-boiler": "[pr] Electric Boiler",
+    "Heat-pump": "[pt]Heat Pump Boiler",
+    "oil-gas": "[pt]Oil, Gas, Wood, District Heating"
+  },
+  "heater": {
+    "label": "[pt]Heater",
+    "content": "[pt]How do you heat your building?",
+    "Electric-boiler": "[pt] Electric Heater",
+    "Heat-pump": "[pt]Heat Pump ",
+    "oil-gas": "[pt]Oil, Gas, Wood, District Heating"
+  },
+  "Supplier": {
+    "label": "[pt]Energy supplier",
+    "label1": "[pt]Energy supplier:",
+    "content": "[pt]Please enter if you know",
+    "sorry-msg": "[pt]Sorry, No Supplier in your area"
+  },
+  "contact-form": {
+    "label": "[pt]Request a quotation",
+    "first-name": "[pt]First Name",
+    "last-name": "[pt]Last Name",
+    "phone": "[pt]Phone Number",
+    "email": "[pt]E-mail Address",
+    "company-name": "[pt]Company Name",
+    "zip-code": "[pt]Zip Code",
+    "city": "[pt]City",
+    "country": "[pt]Country",
+    "project-address": "[pt]Project Address",
+    "street-address": "[pt]Street Address",
+    "interest": "[pt]I am also interested in:",
+    "heat-pump": "[pt]Heat Pump",
+    "charge-station": "[pt]Charging station",
+    "energy": "[pt]Energy management",
+    "message": "[pt]Leave a message",
+    "allow": "[pt]I allow the processing of my data for advice and information purposes about solar power systems.",
+    "submit": "[pt]Submit",
+    "data": "[pt]What happen with my data?"
+  },
+  "Location": {
+    "location": "Location"
+  }
+}

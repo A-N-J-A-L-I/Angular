@@ -1,0 +1,112 @@
+<form #contactForm=ngForm (ngSubmit)="confirm()">
+  <div class="modal-header">
+    <h4 class="modal-title">{{ 'contact-form.label' | translate}}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body px-5">
+    <div >
+      <div class="row">
+        <div class="col-6 ">
+          <div class="form-group">
+            <input type='text' [ngModelOptions]="{standalone: true}" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.firstname" placeholder="{{ 'contact-form.first-name' | translate}}*" required>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" [ngModelOptions]="{standalone: true}" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.lastname" placeholder="{{ 'contact-form.last-name' | translate}}*" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" [ngModelOptions]="{standalone: true}" (keypress)="numberOnly($event)"  class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.phonenumbers" placeholder="{{ 'contact-form.phone' | translate}}*" required>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input type="email" [ngModelOptions]="{standalone: true}" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.emailid" placeholder="{{ 'contact-form.email' | translate}}*" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" [ngModelOptions]="{standalone: true}" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.companyname" placeholder="{{ 'contact-form.company-name' | translate}}" >
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" [ngModelOptions]="{standalone: true}" (keypress)="numberOnly($event)" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.zip" placeholder="{{ 'contact-form.zip-code' | translate}}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" [ngModelOptions]="{standalone: true}" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.city" placeholder="{{ 'contact-form.city' | translate}}" >
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" [ngModelOptions]="{standalone: true}" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.country" placeholder="{{ 'contact-form.country' | translate}}*" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="projectaddress">
+        </label>
+        <textarea name="projectaddress" id="projectaddress" placeholder="{{ 'contact-form.project-address' | translate}}" cols="30" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.projectaddress" rows="1"></textarea>
+      </div>
+      <!--<div class="form-group">-->
+        <!--<label for="streetaddress">-->
+        <!--</label>-->
+        <!--<textarea name="remark" id="streetaddress" placeholder="{{ 'contact-form.street-address' | translate}}" cols="30" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.streetaddress" rows="3"></textarea>-->
+      <!--</div>-->
+      <br>
+      <p>{{ 'contact-form.interest' | translate}}</p>
+      <br>
+      <div class="row">
+        <div class="col-5 ">
+          <ui-switch size="small" defaultBoColor = '#606266' [ngModelOptions]="{standalone: true}" [(ngModel)]="customercontact.customerinfo.heatpump"></ui-switch>
+          <label>{{ 'contact-form.heat-pump' | translate}}</label>
+        </div>
+        <div class="col-6">
+          <ui-switch size="small" defaultBoColor = '#606266' [ngModelOptions]="{standalone: true}" [(ngModel)]="customercontact.customerinfo.station"></ui-switch>
+          <label>{{ 'contact-form.charge-station' | translate}}</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ui-switch size="small" defaultBoColor = '#606266' [ngModelOptions]="{standalone: true}" [(ngModel)]="customercontact.customerinfo.energymanagment"></ui-switch>
+          <label>{{ 'contact-form.energy' | translate}}</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">
+        </label>
+        <textarea name="message" id="message" placeholder="{{ 'contact-form.message' | translate}}" cols="30" class="form-control bor-col" [(ngModel)]="customercontact.customerinfo.message" rows="3"></textarea>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ui-switch size="small" defaultBoColor = '#606266'
+           [ngModelOptions]="{standalone: true}" [(ngModel)]="customercontact.customerinfo.allow"></ui-switch>
+          <span><label>
+            {{ 'contact-form.allow' | translate}}</label></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer justify-content-center d-flex flex-column">
+    <div>
+      <button  type="submit"  [disabled]="check()"  class="btn btn-primary">{{'contact-form.submit' | translate }}</button>
+    </div>
+    <br>
+
+    <div>
+      <small>{{'contact-form.data' | translate }}</small>
+    </div>
+  </div>
+</form>

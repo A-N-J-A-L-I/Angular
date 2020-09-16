@@ -1,0 +1,158 @@
+<div>
+  <!--<h3 class="step-heading">{{'Roof-pitch.label' | translate}}</h3>-->
+  <div class="d-flex head">
+    <h3 class="step-heading">{{'Roof-pitch.label' | translate}}</h3>
+    <p class="float-right" style="color: gray; font-family: 'poppins';">STEP 3/8</p>
+  </div>
+  <p>{{'Roof-pitch.content' | translate}}</p>
+  <div class="spacer-2"></div>
+  <div class="row remove-space">
+    <div class="col-4">
+      <div class="pitch-selector" (click)="selectPitch(0)" [ngClass]="{'selected': roofPitch==0}">
+        <!--<div class="angle-diagram">
+          <img src="../../assets/pitch_zero_disabled.png" class="img-fluid not-selected" alt="">
+          <img src="../../assets/pitch_zero_selected.png" class="img-fluid pitch-selected" alt="">
+        </div>-->
+        <div class="angle-view">
+          <div class="angle-line zero"></div>
+        </div>
+        <div class="angle-value">
+          0&#176;
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="pitch-selector" (click)="selectPitch(30)" [ngClass]="{'selected': roofPitch==30}">
+        <!--<div class="angle-dia gram">
+          <img src="../../assets/pitch_zero_disabled.png" class="img-fluid not-selected" alt="">
+          <img src="../../assets/pitch_zero_selected.png" class="img-fluid pitch-selected" alt="">
+        </div>-->
+        <div class="angle-view">
+        <div class="angle-line thirty left"></div>
+        <div class="angle-line thirty right"></div>
+        </div>
+      <!--<div class="image">-->
+        <!--<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+	 <!--width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">-->
+<!--<g>-->
+	<!--<g id="_x39__30_">-->
+		<!--<g>-->
+			<!--<path d="M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27-->
+				<!--L7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832-->
+				<!--c9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z"/>-->
+		<!--</g>-->
+	<!--</g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--<g>-->
+<!--</g>-->
+<!--</svg>-->
+      <!--</div>-->
+
+        <div class="angle-value">
+          30&#176;
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="pitch-selector" (click)="selectPitch(45)" [ngClass]="{'selected': roofPitch==45}">
+        <div class="angle-view">
+        <div class="angle-line fourty-five left"></div>
+        <div class="angle-line fourty-five right"></div>
+        </div>
+       <!--<div class="image">-->
+                  <!--<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+        <!--width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">-->
+        <!--<g>-->
+          <!--<g id="_x39__30_">-->
+            <!--<g>-->
+              <!--<path d="M604.501,440.509L325.398,134.956c-5.331-5.357-12.423-7.627-19.386-7.27c-6.989-0.357-14.056,1.913-19.387,7.27-->
+				<!--L7.499,440.509c-9.999,10.024-9.999,26.298,0,36.323s26.223,10.024,36.222,0l262.293-287.164L568.28,476.832-->
+				<!--c9.999,10.024,26.222,10.024,36.221,0C614.5,466.809,614.5,450.534,604.501,440.509z"/>-->
+            <!--</g>-->
+          <!--</g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--<g>-->
+        <!--</g>-->
+        <!--</svg>-->
+      <!--</div>-->
+        <div class="angle-value">
+          45&#176;
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-3"></div>
+  <div class="form-container">
+    <div class="row form-group ">
+      <!--<label class="col-4 col-form-label">-->
+      <!--{{'Roof-pitch.Manual-input' | translate}}-->
+      <!--</label>-->
+      <div class="col-12">
+        <input type="number" class="form-control w-100" [(ngModel)]="roofPitch"
+               placeholder="{{'Roof-pitch.placeholder' | translate}}">
+      </div>
+    </div>
+    <div class="spacer-2"></div>
+    <div class="text-center" *ngIf="this.roofPitch != null">
+      <button class="btn btn-primary w-100" (click)="submitForm()">{{'Continue' | translate}}</button>
+    </div>
+  </div>
+</div>

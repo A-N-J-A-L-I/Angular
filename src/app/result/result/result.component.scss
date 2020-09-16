@@ -1,0 +1,124 @@
+//.result-ui-section{
+//  overflow-y: scroll;
+//}
+.nav ul{
+  display: flex;
+  border-bottom: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: disc;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+ul li{
+  list-style: none;
+
+}
+
+nav ul>li.active {
+  color: #005622;
+  background-color: #ffffff;
+  border-color: #d5d5d5;
+  border-bottom-color: white;
+
+}
+nav ul>li:first-child {
+  border-left: 1px solid #d5d5d5;
+}
+
+nav ul>li:last-child:after {
+  content: none;
+}
+nav ul>li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 16.5px;
+  font-size: 14px;
+  font-weight: 600;
+  border-right: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  border-top: 1px solid #d5d5d5;
+  background-color: #efefef;
+  text-align: center;
+}
+nav ul>li.active:after {
+  background-color: white;
+  border-color: #d5d5d5;
+}
+nav ul>li:after{
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  right: -11.5px;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d5d5d5;
+  border-left: 0;
+  border-bottom: 0;
+  background-color: #efefef;
+  z-index: 1;
+}
+nav ul>li.pdf-btn {
+  border-color: #d5d5d5;
+  color: #fff;
+  justify-content: center;
+  background-color: #007d32;
+}
+img {
+  max-width: 12%;
+
+}
+
+@media only screen and (min-width: 766px) {
+  app-footer {
+    display: none;
+  }
+
+
+}
+@media only screen and (max-width: 900px) {
+  nav ul>li {
+    font-size: 12px;
+  }
+
+}
+@media only screen and (max-width: 770px) {
+  nav ul>li {
+    display: none;
+
+
+  }
+  nav ul>li.active {
+    color: #353535;
+    background-color: #ffffff;
+    display: block;
+    border: none;
+    content: none;
+    font-size: 17px;
+     font-weight: bold;
+    //box-shadow: 0 0 12px 0 rgba(0,0,0,.1);
+    box-shadow: 0 4px 2px -2px lightgray;
+    width: 100%;
+  }
+  nav ul>li:after{
+  content: none;
+  }
+  .all-nav {
+    padding: 0;
+  }
+//ul>li {
+//    margin: 0;
+//    padding: 0;
+//  }
+}

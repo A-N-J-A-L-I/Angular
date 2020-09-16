@@ -1,0 +1,93 @@
+<div class="container-fluid p-4 result">
+  <div class="row mb-4 quotation">
+    <div class="">
+      <button type="button" class="btn btn-primary text-uppercase" (click)=" createQuotation()">{{'contact-form.label' |
+        translate }}
+      </button>
+    </div>
+  </div>
+
+  <!--//Side Tab button-->
+  <div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-12 col-xl-3">
+      <div class="all-button">
+        <div class="independence mt-3 mb-3">
+          <button type="button" class="btn btn-primary w-100 my-button" (click)="stepChange('independence')"
+                  [ngClass]="{'active' : activeStep === 'independence'}">{{'independence.label' | translate}}
+          </button>
+        </div>
+        <div class="consumption mb-3">
+          <button type="button" class="btn btn-primary w-100 my-button"
+                  [ngClass]="{'active' :  activeStep === 'consumption' }" (click)="stepChange('consumption')">
+            {{'consumption1.label' |
+            translate }}
+          </button>
+        </div>
+        <div class="typicalDay mb-3">
+          <button type="button" class="btn btn-primary w-100 my-button" (click)="stepChange('typicalDay')" [ngClass]="{
+          'active' :  activeStep === 'typicalDay'
+        }">{{'typical-day.label' |
+            translate }}
+          </button>
+        </div>
+        <div class="typicalDay mb-3">
+          <button type="button" class="btn btn-primary w-100 my-button" (click)="stepChange('financial')" [ngClass]="{
+          'active' :  activeStep === 'financial'
+        }">{{'financial.label' | translate }}
+          </button>
+        </div>
+        <div class="sustain mb-3">
+          <button type="button" class="btn btn-primary w-100 my-button" (click)="stepChange('sustain')" [ngClass]="{
+          'active' :  activeStep === 'sustain'
+        }">{{'sustainability.label' |
+            translate }}
+          </button>
+        </div>
+        <div class="howFuther mb-3">
+          <button type="button" class="btn btn-primary w-100 my-button" (click)="stepChange('howFuther')" [ngClass]="{
+          'active' :  activeStep === 'howFuther'
+                 }">{{'how-futher.label' |
+            translate }}
+          </button>
+        </div>
+        <div class="quote-request mb-4">
+          <button type="button" class="btn btn-primary w-100  text-uppercase" style="white-space: normal" (click)=" createQuotation()">{{'contact-form.label' |
+            translate }}
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!--// Tab content-->
+    <div class="col-md-8 col-lg-8 col-sm-12 card mb-5 col-xl-9 tab-content ">
+      <div *ngIf="activeStep === 'independence'">
+        <app-result-independence (stepChanges)="stepChange('consumption')"></app-result-independence>
+      </div>
+      <div *ngIf="activeStep === 'consumption'">
+        <app-result-consumption (stepChanges)="stepChange('typicalDay')"></app-result-consumption>
+      </div>
+      <div *ngIf="activeStep === 'typicalDay'">
+        <app-result-typical-day (stepChanges)="stepChange('financial')"></app-result-typical-day>
+      </div>
+      <div *ngIf="activeStep === 'financial'">
+        <app-result-financial (stepChanges)="stepChange('sustain')"></app-result-financial>
+      </div>
+      <div *ngIf="activeStep === 'howFuther'">
+        <app-result-how-futher></app-result-how-futher>
+      </div>
+      <div *ngIf="activeStep === 'sustain'">
+        <app-result-sustain (stepChanges)="stepChange('howFuther')"></app-result-sustain>
+      </div>
+     <div *ngIf="isVisible">
+       <div class="row mb-3 btnnext">
+         <div class="col-12">
+           <div class="next-button mb-3 float-right" id="next">
+             <b type="button" class="text-uppercase  mr-2" style="cursor: pointer" (click)="next(activeStep)">{{'next' | translate}}</b>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>

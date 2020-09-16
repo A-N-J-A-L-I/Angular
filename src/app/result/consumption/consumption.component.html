@@ -1,0 +1,160 @@
+<div class="consumtion">
+  <div class="container-fluid">
+    <div class="row ml-3 mt-3 flex-column radio-btn ">
+      <h4 class="text-bold "><b>{{'variation-selection' | translate }}</b></h4>
+      <div class="radio-btn1 d-flex">
+        <div class="radio-btn1 d-flex">
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="storage" value="wos" name="PV-select"
+                   (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">{{'pv-without-storage' | translate }}</span>
+          </label>
+          <img class="ml-0 mb-2" tooltip="Photovoltaic system without battery"
+               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZDVkNWQ1OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImluZm9faWNvbiIgY2xhc3M9ImNscy0xIiBkPSJNMTAtLjAwNWExMCwxMCwwLDEsMCwxMCwxMEExMCwxMCwwLDAsMCwxMC0uMDA1Wm0yLjA4MiwxNS41cS0wLjc3MS4zLTEuMjMyLDAuNDY0YTMuMjQ3LDMuMjQ3LDAsMCwxLTEuMDY4LjE2LDIuMTM3LDIuMTM3LDAsMCwxLTEuNDU0LS40NTZBMS40NzUsMS40NzUsMCwwLDEsNy44MDYsMTQuNWE0LjI0LDQuMjQsMCwwLDEsLjAzOC0wLjU1OGMwLjAyNi0uMTg5LjA2OC0wLjQsMC4xMjUtMC42NDJsMC42NDQtMi4yNzVjMC4wNTctLjIyLjEwNi0wLjQyNywwLjE0NS0wLjYyMWEyLjc1MywyLjc1MywwLDAsMCwuMDU3LTAuNTM2LDAuODI0LDAuODI0LDAsMCwwLS4xNzktMC42MDdBMS4wMTgsMS4wMTgsMCwwLDAsNy45NDcsOS4xYTEuOCwxLjgsMCwwLDAtLjUxMi4wNzZjLTAuMTc0LjA1My0uMzI1LDAuMS0wLjQ0OCwwLjE0OWwwLjE3LS43UTcuNzksOC4zNjEsOC4zNjgsOC4xNzhBMy41NzcsMy41NzcsMCwwLDEsOS40Niw3Ljk5M2EyLjA5MSwyLjA5MSwwLDAsMSwxLjQzMy40NDksMS40OTIsMS40OTIsMCwwLDEsLjUsMS4xNjVxMCwwLjE0OS0uMDM1LjUyM2EzLjUyOCwzLjUyOCwwLDAsMS0uMTI5LjY4N2wtMC42NDEsMi4yNjlxLTAuMDc4LjI3NC0uMTQxLDAuNjIzYTMuMjY2LDMuMjY2LDAsMCwwLS4wNjIuNTMyLDAuNzYzLDAuNzYzLDAsMCwwLC4yLjYxNiwxLjEzMywxLjEzMywwLDAsMCwuNy4xNjQsMS45OTMsMS45OTMsMCwwLDAsLjUzMS0wLjA4MywyLjkzNCwyLjkzNCwwLDAsMCwuNDI4LTAuMTQ0Wm0tMC4xMTMtOS4yMWExLjUzLDEuNTMsMCwwLDEtMS4wOC40MTZBMS41NDgsMS41NDgsMCwwLDEsOS44LDYuMjg0YTEuMzU5LDEuMzU5LDAsMCwxLDAtMi4wMjMsMS41MzUsMS41MzUsMCwwLDEsMS4wODQtLjQyMSwxLjUxOCwxLjUxOCwwLDAsMSwxLjA4LjQyMUExLjM2NCwxLjM2NCwwLDAsMSwxMS45NjQsNi4yODRaIi8+Cjwvc3ZnPgo=">
+        </div>
+        <div class="radio-btn1 d-flex ml-5">
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="storage" value="ws" name="PV-select"
+                   (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">{{'PV-with-storage' | translate }}</span>
+          </label>
+          <img class="ml-1 mb-2" tooltip="Photovoltaic system with battery"
+               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZDVkNWQ1OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImluZm9faWNvbiIgY2xhc3M9ImNscy0xIiBkPSJNMTAtLjAwNWExMCwxMCwwLDEsMCwxMCwxMEExMCwxMCwwLDAsMCwxMC0uMDA1Wm0yLjA4MiwxNS41cS0wLjc3MS4zLTEuMjMyLDAuNDY0YTMuMjQ3LDMuMjQ3LDAsMCwxLTEuMDY4LjE2LDIuMTM3LDIuMTM3LDAsMCwxLTEuNDU0LS40NTZBMS40NzUsMS40NzUsMCwwLDEsNy44MDYsMTQuNWE0LjI0LDQuMjQsMCwwLDEsLjAzOC0wLjU1OGMwLjAyNi0uMTg5LjA2OC0wLjQsMC4xMjUtMC42NDJsMC42NDQtMi4yNzVjMC4wNTctLjIyLjEwNi0wLjQyNywwLjE0NS0wLjYyMWEyLjc1MywyLjc1MywwLDAsMCwuMDU3LTAuNTM2LDAuODI0LDAuODI0LDAsMCwwLS4xNzktMC42MDdBMS4wMTgsMS4wMTgsMCwwLDAsNy45NDcsOS4xYTEuOCwxLjgsMCwwLDAtLjUxMi4wNzZjLTAuMTc0LjA1My0uMzI1LDAuMS0wLjQ0OCwwLjE0OWwwLjE3LS43UTcuNzksOC4zNjEsOC4zNjgsOC4xNzhBMy41NzcsMy41NzcsMCwwLDEsOS40Niw3Ljk5M2EyLjA5MSwyLjA5MSwwLDAsMSwxLjQzMy40NDksMS40OTIsMS40OTIsMCwwLDEsLjUsMS4xNjVxMCwwLjE0OS0uMDM1LjUyM2EzLjUyOCwzLjUyOCwwLDAsMS0uMTI5LjY4N2wtMC42NDEsMi4yNjlxLTAuMDc4LjI3NC0uMTQxLDAuNjIzYTMuMjY2LDMuMjY2LDAsMCwwLS4wNjIuNTMyLDAuNzYzLDAuNzYzLDAsMCwwLC4yLjYxNiwxLjEzMywxLjEzMywwLDAsMCwuNy4xNjQsMS45OTMsMS45OTMsMCwwLDAsLjUzMS0wLjA4MywyLjkzNCwyLjkzNCwwLDAsMCwuNDI4LTAuMTQ0Wm0tMC4xMTMtOS4yMWExLjUzLDEuNTMsMCwwLDEtMS4wOC40MTZBMS41NDgsMS41NDgsMCwwLDEsOS44LDYuMjg0YTEuMzU5LDEuMzU5LDAsMCwxLDAtMi4wMjMsMS41MzUsMS41MzUsMCwwLDEsMS4wODQtLjQyMSwxLjUxOCwxLjUxOCwwLDAsMSwxLjA4LjQyMUExLjM2NCwxLjM2NCwwLDAsMSwxMS45NjQsNi4yODRaIi8+Cjwvc3ZnPgo=">
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="row mobile_btn mb-3 mt-4">
+      <div class="col-12 w-100">
+
+        <select id="pv" name="pv" [(ngModel)]="storage" (change)="changeSeason()">
+          <option value="wos">{{'pv-without-storage' | translate }}</option>
+          <option value="ws">{{'PV-with-storage' | translate }}</option>
+
+        </select>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-6 col-sm-12 text-center">
+        <h4 class="title"><b>{{'consumption1.content' | translate }}</b></h4>
+        <div class="row season-carousel mb-4">
+          <carousel (activeSlideChange)="log($event)" [interval]="false">
+            <slide *ngFor="let season of slides; let index=index">
+              <b>{{season}}</b>
+            </slide>
+          </carousel>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-12 text-center">
+            Solar Value<br>
+            <b>{{ seasonValue }} kWh</b>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-3">
+            <div class="my-auto  text-center">
+              Battery<br>
+              <b>{{battery}} kWh</b><br><br>
+              <img class="img1" src="../../../assets/battery.svg" />
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="../../../assets/graph.png" alt="" class="img-fluid" style="width: 300px">
+          </div>
+          <div class="col-3">
+            <div class="my-auto  text-center">
+              Grid<br>
+              <b>{{ toNet }} kWh</b><br><br>
+              <img class="img1" src="../../../assets/tower.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            Direct Use<br>
+            <b>{{directUse}}</b>
+          </div>
+        </div>
+        <div class="justify-content-center">
+          <button type="button" class="btn btn-primary mt-4 mb-5 text-uppercase continue-btn" (click)="changeUrl()">
+            {{'Continue' | translate }}
+          </button>
+        </div>
+
+
+      </div>
+      <div class="col-md-3 mt-5  ">
+        <div class="side-radio-btn float-right">
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="season" value="year" (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">Whole-year</span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="season" value="spring" (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">Spring</span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="season" value="summer" (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">Summer</span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="season" value="autumn" (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">Autumn</span>
+          </label>
+          <label class="radio-button">
+            <input type="radio" class="radio-button__input" [(ngModel)]="season" value="winter" (change)="changeSeason()">
+            <span class="radio-button__control"></span>
+            <span class="radio-button__label">Winter</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+  <div class="container-fluid pl-0">
+    <div class="row text-center quotation " (click)="createQuotation()">
+      <div class="col-12 text-light">
+        <div class="mt-2">
+          <span><img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9IlBERl9pY29uIiBkYXRhLW5hbWU9IlBERiBpY29uIiBjbGFzcz0iY2xzLTEiIGQ9Ik03LjA3MSwxMy4zMjJBMS4xMzYsMS4xMzYsMCwwLDAsNS43MjgsMTIuMmEyLjkzNCwyLjkzNCwwLDAsMC0uNzExLjA2OFYxNC41MmEyLjY0OSwyLjY0OSwwLDAsMCwuNTc1LjA0NUExLjI2OCwxLjI2OCwwLDAsMCw3LjA3MSwxMy4zMjJabTUuMzA5LTEuMWEzLjU5NCwzLjU5NCwwLDAsMC0uNzguMDY4djQuOTgxYTMuMTM0LDMuMTM0LDAsMCwwLC42LjAzNCwyLjM2LDIuMzYsMCwwLDAsMi41NzUtMi42NjZBMi4xODMsMi4xODMsMCwwLDAsMTIuMzgxLDEyLjIyN1pNMjMsOUgyMkwyMS45Myw2LjI4OWEwLjQyMywwLjQyMywwLDAsMC0uMDA2LTAuMDU3QTAuNSwwLjUsMCwwLDAsMjEuOCw1LjlMMTYuNzkxLDAuMTc2bDAsMGEwLjUwNSwwLjUwNSwwLDAsMC0uMS0wLjA4NWwtMC4wMzMtLjAyYTAuNTI2LDAuNTI2LDAsMCwwLS4xLTAuMDQybC0wLjAyNy0uMDA5QTAuNTA5LDAuNTA5LDAsMCwwLDE2LjQwOCwwTDQsMEEwLjk4OCwwLjk4OCwwLDAsMCwzLDFWOUgyYy0wLjgsMC0xLC4yLTEsMXY5YzAsMC44LjIsMSwxLDFIM3Y1YTAuOTg4LDAuOTg4LDAsMCwwLDEsMUgyMWEwLjk4OCwwLjk4OCwwLDAsMCwxLTFWMjBoMWMwLjgsMCwxLS4yLDEtMVYxMEMyNCw5LjIsMjMuOCw5LDIzLDlaTTQsMUwxNS45LDEuMDIxLDE2LDZhMS43NDksMS43NDksMCwwLDAsMSwxaDRWOUg0VjFaTTE2LjYsMTQuNTg3YTMuODU4LDMuODU4LDAsMCwxLTEuMjY2LDMuMDg0LDUuNDYxLDUuNDYxLDAsMCwxLTMuNTExLjk4MiwxNC45NzYsMTQuOTc2LDAsMCwxLTEuOTU0LS4xMTNWMTEuMDYzYTE1LjM5MiwxNS4zOTIsMCwwLDEsMi4zMjctLjE1OCw0LjksNC45LDAsMCwxLDMuMTE3LjgxM0EzLjM2OSwzLjM2OSwwLDAsMSwxNi42LDE0LjU4N1pNMy4zMTEsMTguNTc0di03LjUxYTE0LjE0MywxNC4xNDMsMCwwLDEsMi4zMjctLjE1OCwzLjY1LDMuNjUsMCwwLDEsMi4zMjYuNjEsMi4yMjQsMi4yMjQsMCwwLDEsLjgxMywxLjc2MiwyLjQzMSwyLjQzMSwwLDAsMS0uNywxLjgwNywzLjUyOSwzLjUyOSwwLDAsMS0yLjQ3NC44LDQuMzU2LDQuMzU2LDAsMCwxLS41ODctMC4wMzR2Mi43MjJIMy4zMTFaTTIxLDI1SDRWMjBIMjF2NVptMS4zODgtMTIuNjI2SDE5LjQ2MnYxLjczOUgyMi4ydjEuNEgxOS40NjJ2My4wNkgxNy43MzVWMTAuOTYyaDQuNjUzdjEuNDEyWiIvPgo8L3N2Zz4K">
+      <span class="text-uppercase ml-2">{{'contact-form.label' | translate }}</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="row prenext">
+      <div class="col-12">
+        <div class="back float-left mt-2">
+          <b class="text-uppercase" (click)="goBack()"><span class="pre mr-1"><i class="fas fa-angle-left "></i></span>{{'Back' | translate }} </b>
+        </div>
+        <div class="continue float-right mt-2">
+          <b type="button" class="text-uppercase mr-2" (click)="changeUrl()">{{'Continue' | translate }}<span class=" next ml-1 mr-1"><i class="fas fa-angle-right"></i></span></b>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+

@@ -1,0 +1,189 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+//@import "~@ng-select/ng-select/themes/default.theme.css";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
+  //height: 100%;
+
+}
+
+//::-webkit-scrollbar {
+//  width: 0px;
+//  background: transparent;
+//}
+.step-heading {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.spacer-1 {
+  margin-top: 1rem;
+}
+
+.spacer-2 {
+  margin-top: 2rem;
+}
+
+.spacer-3 {
+  margin-top: 3rem;
+}
+
+.btn-primary {
+  background-color: #007d32;
+  border-color: #007d32;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #005622;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  background-color: #005622;
+  box-shadow: 0 0 0 0.2rem #0056226b;
+  border-color: #007d32;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #005622;
+  border-color: #007d32;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #0056226b;
+  background-color: #005622;
+  border-color: #007d32;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+input,
+input::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+.radio-button__input {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-button__control {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: inherit;
+  color: #017b5f;
+  border: 1px solid #818181;
+  border-radius: 24px;
+}
+
+.radio-button__input:checked+.radio-button__control:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 13px;
+  height: 13px;
+  background-color: #007d32;
+  border-radius: 12px;
+}
+
+.radio-button__input:checked+.radio-button__control {
+  border-color: #007d32;
+}
+
+.radio-button__control {
+  transform: scale(0.75);
+}
+
+.radio-button {
+  cursor: pointer;
+  padding-right: 25px;
+}
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 11px 23px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+
+
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #353535;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #005622;
+}
+
+
+html, body {
+  height: 100%;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.alignment-section {
+  .mat-slider {
+    border: none !important;
+
+    &:focus-within {
+      outline: none !important;
+      box-shadow: 0 0 0 0 !important;
+    }
+  }
+
+  .house-image {
+    svg {
+      width: 100px !important;
+      height: 100px !important;
+
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  ::-webkit-input-placeholder { /* Edge */
+    font-size: 11px;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 11px;
+  }
+
+  input::-webkit-input-placeholder  {
+    font-size: 11px;
+  }
+
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color:    #C3C6C6!important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #C3C6C6!important;
+}
+
+input::-webkit-input-placeholder  {
+  color:    #C3C6C6!important;
+}

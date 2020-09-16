@@ -1,0 +1,128 @@
+.pitch-selector {
+  cursor: pointer;
+  text-align: center;
+  border: dashed 1px #d5d5d5;
+  padding: 20px;
+  .angle-value {
+    font-size: 1.5em;
+    //color: #d5d5d5;
+    color: #C2C6C6;
+  }
+  .angle-diagram {
+    .not-selected {
+      display: initial;
+    }
+    .pitch-selected {
+      display: none;
+    }
+    img {
+      width: 40%;
+    }
+  }
+}
+//.pitch-selector{
+//  text-align: center;
+//  cursor: pointer;
+//  border: dashed 1px #d5d5d5;
+//  padding: 20px;
+//  .image{
+//    width: 85%;
+//    margin: auto;
+//  }
+//  svg{
+//    //fill: #d5d5d5;
+//    fill:#C2C6C6;
+//    width: 100%;
+//    height: 100%;
+//  }
+//}
+
+  .angle-view{
+    width: 75%;
+    min-width: 40%;
+    max-width: 60px;
+    height: 40px;
+    position: relative;
+    vertical-align: center;
+    margin: auto;
+    .angle-line{
+      border-top: 3px solid #C2C6C6;
+      position: absolute;
+      top: 45%;
+      margin-bottom: 3px;
+    }
+    .angle-line.zero{
+      width: 100%;
+    }
+    .angle-line.thirty{
+      width: 55%;
+    }
+    .angle-line.fourty-five{
+      width: 60%;
+    }
+    .angle-line.thirty.left{
+      left: 0;
+      -ms-transform: rotate(-30deg); /* IE 9 */
+      transform: rotate(-30deg);
+    }
+    .angle-line.thirty.right{
+      right: 0;
+      -ms-transform: rotate(30deg); /* IE 9 */
+      transform: rotate(30deg);
+    }
+    .angle-line.fourty-five.left{
+      left: 0;
+      -ms-transform: rotate(-45deg); /* IE 9 */
+      transform: rotate(-45deg);
+    }
+    .angle-line.fourty-five.right{
+      right: 0;
+      -ms-transform: rotate(45deg); /* IE 9 */
+      transform: rotate(45deg);
+    }
+  }
+//}
+.pitch-selector:hover, .pitch-selector.selected{
+  .angle-value{
+    color: #007d32;
+  }
+  .angle-view{
+    .angle-line {
+      border-top: 3px solid #007d32;
+    }
+  }
+}
+
+
+.head {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 960px) {
+  .angle-view {
+    height: 30px!important;
+  }
+  .pitch-selector {
+    padding: 15px;
+  }
+
+}
+@media only screen and (max-width: 1100px) {
+  .angle-value {
+    font-size: 1em !important;
+  }
+
+}
+.row.remove-space {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+.step-heading {
+  font-family: 'poppins';
+}

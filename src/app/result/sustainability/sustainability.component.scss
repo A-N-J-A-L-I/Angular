@@ -1,0 +1,114 @@
+.radio-btn {
+  margin-bottom: 2rem!important;
+}
+.title {
+  color: #353535;
+  margin-bottom: 3.4rem!important;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+
+h3 {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-end: 0;
+  //margin-inline-start: 1rem;
+  margin: inherit;
+  font-size: 18px;
+
+}
+.continue-btn {
+
+  width: 160px;
+  background-color: #007d32;
+  color: #fff;
+
+}
+
+.mobile_btn{
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .mobile_btn {
+    display: block;
+  }
+  .solar-info , .side-radio{
+    display: none;
+  }
+  .radio-btn{
+    display: none;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .info-item {
+    border-bottom: 1px solid #d5d5d5;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .continue-btn{
+    display: none;
+  }
+}
+select {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+}
+option {
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sustain{
+  margin-bottom: 5rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.quotation {
+  background-color: #007d32;
+  height: 45px;
+  cursor: pointer;
+  letter-spacing: .75px;
+}
+b {
+  color: #005622;
+  cursor: pointer;
+}
+
+.pre  ,.next {
+  height: 20px;
+  width: 20px;
+}
+.prenext {
+  background-color: #ffffff;
+}
+@media only screen and (min-width: 766px) {
+  footer {
+    display: none;
+  }
+
+
+}
+
+.solar-info{
+  height: 73px;
+  background-color: #efefef;
+  width: 380px;
+  border: 1px solid#d5d5d5;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 1.2rem;
+}
+

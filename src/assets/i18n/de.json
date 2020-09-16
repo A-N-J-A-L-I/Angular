@@ -1,0 +1,170 @@
+{
+  "To-change": "Bearbeiten",
+  "Continue": "Fortsetzen",
+  "Contact": "[de]Contact",
+  "Back": "Zurück",
+  "next": "Nächster",
+  "Preparing-Results": "Ergebnisse abrufen ...",
+  "content": "Wir berechnen jetzt Ihre persönliche Solaranlage für die nächsten 25 Jahre. Dies geschieht am",
+  "content1": "Grundlage von",
+  "content2": "lokale Energiepreise, Bestrahlungsdaten und ein typisches Verbrauchsprofil für Ihr Haus. Dies gibt Ihnen eine",
+  "content3": "ausgezeichnete Grundlage für Ihre Entscheidung.",
+  "pv-without-storage": "PV ohne Speicher",
+  "PV-with-storage": "PV mit Batterie",
+  "variation-selection": "Variationsauswahl",
+  "season": {
+    "whole-year": "Ganzes Jahr",
+    "autumn": "Herbst",
+    "winter": "Winter",
+    "summer": "Sommer",
+    "spring": "Frühling"
+  },
+  "address": {
+    "content": "Geben Sie Ihre Adresse ein, um alle energetischen, wirtschaftlichen und ökologischen Vorteile von Solarenergie auf Ihrem Dach zu entdecken.",
+    "solar": "Solarrechner"
+  },
+  "independence": {
+    "label": "Unabhängigkeit",
+    "content": "Wie viel von Ihrem Strombedarf kommt direkt von Ihrem Dach?"
+  },
+  "consumption1": {
+    "label": "Verbrauch",
+    "content": "Wie viel von Ihrem Strombedarf kommt direkt von Ihrem Dach?",
+    "solar-system": "Solaranlage:",
+    "battery-size": "Batteriegröße:",
+    "annual-production": "Jährliche Produktion:",
+    "electricity-generation-costs": "Stromerzeugungskosten:"
+  },
+  "typical-day": {
+    "label": "Ein typischer Tag",
+    "content": "Ein typischer Tag",
+    "production": "Solarproduktion",
+    "consumption": "Eigenverbrauch",
+    "battery": "Akkuladung",
+    "independence": "Unabhängigkeit"
+  },
+  "economic": {
+    "label": "Zusammenfassung",
+    "content": "Systemzusammenfassung",
+    "solar-system": "Solaranlage",
+    "battery-size": "Batteriegröße",
+    "annual-production": "Jährliche Produktion",
+    "electricity-generation-costs": "Stromerzeugungskosten:"
+  },
+  "sustainability": {
+    "label": "Nachhaltigkeit",
+    "content": "Ein wichtiger Beitrag zur Umwelt",
+    "globe": "Fahren Sie Ihr Auto  ",
+    "globe1": "km um die Welt.",
+    "foot": "Reduzieren Sie Ihren CO2-Fußabdruck um",
+    "tree": "Sparen Sie die gleiche Menge CO2, die Sie verbrauchen ",
+    "tree1": "Bäume pro Jahr."
+  },
+  "how-futher": {
+    "label": "wie weiter",
+    "content": "Vielen dank für ihr Interesse",
+    "content1": "Sie wissen jetzt, was die Sonne für Sie tun kann. Gerne unterbreiten wir Ihnen ein Angebot für Ihr zukünftiges Sonnensystem."
+  },
+  "Roof-area": {
+    "label": "Dachfläche",
+    "content": "Markieren Sie die gesamte Dachfläche Ihres Hauses mit dem Bleistift.",
+    "Floor-plan": "Gebäudeplan:",
+    "Manual-label": "Wenn Sie die nutzbare Dachfläche kennen, können Sie diese manuell eingeben:",
+    "Manual-entry": "Manueller Eintrag:",
+    "Usable-area": "Nutzfläche"
+  },
+  "House-type": {
+    "label": "Haustyp",
+    "label1": "HausTyp",
+    "content": "Wählen Sie Ihren Haustyp.",
+    "Occupy-two-sides": "Besetzen Sie beide Seiten"
+  },
+  "Roof-pitch": {
+    "label": "Dachneigung",
+    "label1": "Dachneigung",
+    "content": "Wählen Sie Ihre Dachneigung oder geben Sie sie manuell ein.",
+    "Manual-input": "Manuelle Eingabe:",
+    "placeholder": "Geben Sie die Dachneigung manuell ein"
+  },
+  "alignment": {
+    "Orientation": "Orientierung",
+    "label": "Ausrichtung",
+    "content": "Richten Sie Ihr Haus gemäß dem Satellitenbild aus.",
+    "slider-content": "Verwenden Sie den Schieberegler, um das Dach zu drehen."
+  },
+  "priority": {
+    "Priority": "Priorität",
+    "label": "Prioritätenliste",
+    "content": "Wählen Sie Ihre Motivation für die Nutzung von Solar nach Priorität.",
+    "selected": "Ausgewählte Priorität",
+    "click": "Klicken Sie, um Ihre Priorität auszuwählen"
+  },
+  "Consumption": {
+    "label": "ahresverbrauch",
+    "content": "Durchschnittlicher Verbrauch",
+    "num-of-people": "Anzahl von Personen in ihrem Haushalt:",
+    "num-of-people-placeholder": "Anzahl der Personen in Ihrem Haus",
+    "yearly-consumption": "Jährlicher Energieverbrauch",
+    "supplier": "Wählen Sie Energieversorger",
+    "skip": "Überspringen"
+  },
+  "Hot-water": {
+    "label": "Heisses Wasser",
+    "label1": "Heisses Wasser",
+    "content": "Wie erhitzen Sie Ihr heißes Wasser?",
+    "Electric-boiler": "Elektrokessel",
+    "Heat-pump": "Wärmepumpenkessel",
+    "oil-gas": "Öl, Gas, Holz, Fernwärme"
+  },
+  "financial": {
+    "bank-interest": "Bankzinssatz                                 ",
+    "eleBillAfterSolar": "Stromrechnung nach Solaranlage",
+    "eleBillBeforeSolar": "Stromrechnung vor Solaranlage",
+    "energy-cost-saving": "Energiekosteneinsparung in 25 Jahren ",
+    "incomeOver25": "Einkommen über 25 Jahre abzüglich Betriebskosten",
+    "investment": "Investition inkl. MwSt. Und einmaliger Zahlung",
+    "label": "Finanziell",
+    "monthly-saving": "Monatliche Energieeinsparung von ",
+    "payback": "Amortisationszeit von ",
+    "payback-year": "Jahre",
+    "solar-irr": "Solar IRR               ",
+    "total-investment": "Gesamtinvestition inkl. Mehrwertsteuer von "
+  },
+  "heater": {
+    "label": "Heizung",
+    "content": "Wie heizen Sie Ihr Gebäude?",
+    "Electric-boiler": "Elektrische Heizung",
+    "Heat-pump": "Wärmepumpe ",
+    "oil-gas": "Öl, Gas, Holz, Fernwärme"
+  },
+  "Supplier": {
+    "label": "Energieversorger",
+    "label1": "Wählen Sie Energieversorger:",
+    "content": "Bitte geben Sie ein, wenn Sie wissen",
+    "sorry-msg": "Entschuldigung, kein Lieferant in Ihrer Nähe"
+  },
+  "contact-form": {
+    "label": "Fordern Sie ein Angebot an",
+    "first-name": "Vorname",
+    "last-name": "Nachname",
+    "phone": "Telefonnummer",
+    "email": "E-Mail-Addresse",
+    "company-name": "Name der Firma",
+    "zip-code": "Postleitzahl",
+    "city": "Stadt",
+    "country": "Land",
+    "project-address": "Projektadresse",
+    "street-address": "Adresse",
+    "interest": "Ich interessiere mich auch für:",
+    "heat-pump": "Wärmepumpe",
+    "charge-station": "Ladestation",
+    "energy": "Energiemanagement",
+    "message": "Hinterlass eine Nachricht",
+    "allow": "Ich erlaube die Verarbeitung meiner Daten zu Beratungs- und Informationszwecken über Solarstromanlagen.",
+    "submit": "einreichen",
+    "data": "Was passiert mit meinen Daten?"
+  },
+  "Location": {
+    "location": "Location"
+  }
+}

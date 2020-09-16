@@ -1,0 +1,43 @@
+<ngx-spinner name='result-loader' [bdColor]="'rgba(0,0,0,0.64)'" [size]="'medium'" [color]="'#0b7b1c'" [type]="'ball-clip-rotate'" [fullScreen]="true"></ngx-spinner>
+
+<section class="result-ui-section" >
+<header>
+  <div class="container-fluid ">
+    <div class="row ">
+      <div class="col-12 all-nav">
+        <nav class="nav d-block ">
+          <ul class="nav-list ">
+            <li class="nav-item " routerLink="/result/independence" [routerLinkActive]="['active']" >
+              <span>{{'independence.label' | translate }}</span>
+            </li>
+            <li class="nav-item" routerLink="/result/consumption"  [routerLinkActive]="['active']">
+              <span   >{{'consumption1.label' | translate }}</span>
+            </li>
+            <li class="nav-item " routerLink="/result/typicalday" [routerLinkActive]="['active']">
+              <span   >{{'typical-day.label' | translate }}</span>
+            </li>
+            <li class="nav-item" routerLink="/result/economic" [routerLinkActive]="['active']">
+              <span   >{{'economic.label' | translate }}</span>
+            </li>
+            <li class="nav-item" routerLink="/result/sustain" [routerLinkActive]="['active']">
+              <span>{{'sustainability.label' | translate }}</span>
+            </li>
+            <li class="nav-item" routerLink="/result/how-futher" [routerLinkActive]="['active']">
+              <span   >{{'how-futher.label' | translate }}</span>
+            </li>
+            <li class="pdf-btn" (click)="createQuotation()">
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9IlBERl9pY29uIiBkYXRhLW5hbWU9IlBERiBpY29uIiBjbGFzcz0iY2xzLTEiIGQ9Ik03LjA3MSwxMy4zMjJBMS4xMzYsMS4xMzYsMCwwLDAsNS43MjgsMTIuMmEyLjkzNCwyLjkzNCwwLDAsMC0uNzExLjA2OFYxNC41MmEyLjY0OSwyLjY0OSwwLDAsMCwuNTc1LjA0NUExLjI2OCwxLjI2OCwwLDAsMCw3LjA3MSwxMy4zMjJabTUuMzA5LTEuMWEzLjU5NCwzLjU5NCwwLDAsMC0uNzguMDY4djQuOTgxYTMuMTM0LDMuMTM0LDAsMCwwLC42LjAzNCwyLjM2LDIuMzYsMCwwLDAsMi41NzUtMi42NjZBMi4xODMsMi4xODMsMCwwLDAsMTIuMzgxLDEyLjIyN1pNMjMsOUgyMkwyMS45Myw2LjI4OWEwLjQyMywwLjQyMywwLDAsMC0uMDA2LTAuMDU3QTAuNSwwLjUsMCwwLDAsMjEuOCw1LjlMMTYuNzkxLDAuMTc2bDAsMGEwLjUwNSwwLjUwNSwwLDAsMC0uMS0wLjA4NWwtMC4wMzMtLjAyYTAuNTI2LDAuNTI2LDAsMCwwLS4xLTAuMDQybC0wLjAyNy0uMDA5QTAuNTA5LDAuNTA5LDAsMCwwLDE2LjQwOCwwTDQsMEEwLjk4OCwwLjk4OCwwLDAsMCwzLDFWOUgyYy0wLjgsMC0xLC4yLTEsMXY5YzAsMC44LjIsMSwxLDFIM3Y1YTAuOTg4LDAuOTg4LDAsMCwwLDEsMUgyMWEwLjk4OCwwLjk4OCwwLDAsMCwxLTFWMjBoMWMwLjgsMCwxLS4yLDEtMVYxMEMyNCw5LjIsMjMuOCw5LDIzLDlaTTQsMUwxNS45LDEuMDIxLDE2LDZhMS43NDksMS43NDksMCwwLDAsMSwxaDRWOUg0VjFaTTE2LjYsMTQuNTg3YTMuODU4LDMuODU4LDAsMCwxLTEuMjY2LDMuMDg0LDUuNDYxLDUuNDYxLDAsMCwxLTMuNTExLjk4MiwxNC45NzYsMTQuOTc2LDAsMCwxLTEuOTU0LS4xMTNWMTEuMDYzYTE1LjM5MiwxNS4zOTIsMCwwLDEsMi4zMjctLjE1OCw0LjksNC45LDAsMCwxLDMuMTE3LjgxM0EzLjM2OSwzLjM2OSwwLDAsMSwxNi42LDE0LjU4N1pNMy4zMTEsMTguNTc0di03LjUxYTE0LjE0MywxNC4xNDMsMCwwLDEsMi4zMjctLjE1OCwzLjY1LDMuNjUsMCwwLDEsMi4zMjYuNjEsMi4yMjQsMi4yMjQsMCwwLDEsLjgxMywxLjc2MiwyLjQzMSwyLjQzMSwwLDAsMS0uNywxLjgwNywzLjUyOSwzLjUyOSwwLDAsMS0yLjQ3NC44LDQuMzU2LDQuMzU2LDAsMCwxLS41ODctMC4wMzR2Mi43MjJIMy4zMTFaTTIxLDI1SDRWMjBIMjF2NVptMS4zODgtMTIuNjI2SDE5LjQ2MnYxLjczOUgyMi4ydjEuNEgxOS40NjJ2My4wNkgxNy43MzVWMTAuOTYyaDQuNjUzdjEuNDEyWiIvPgo8L3N2Zz4K">
+              <span class="ml-1" >{{'contact-form.label' | translate }}</span>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+    </div>
+</header>
+  <div class="container-fluid ">
+    <router-outlet></router-outlet>
+  </div>
+</section>
+<!--<app-footer></app-footer>-->

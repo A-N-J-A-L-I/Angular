@@ -1,0 +1,162 @@
+<div class="container typicalday">
+  <p class="title-header h5 mb-2 mt-3">{{'typical-day.content' | translate }}</p>
+  <!--// Desktop radio button for storage -->
+  <div class="row ml-0 mt-3 radio-btn  flex-column">
+    <div class="radio-btn1 d-flex">
+      <div class="radio-btn1 d-flex">
+        <label class="radio-button">
+          <input type="radio" class="radio-button__input" [(ngModel)]="storage" value="PV-without-storage"
+                 name="PV-select"
+                 (change)="changeSeason()" >
+          <span class="radio-button__control"></span>
+          <span class="radio-button__label" style="color: #677171;   font-family: 'poppins';">{{'pv-without-storage' | translate }}</span>
+        </label>
+        <!--<img class="ml-0 mb-2" tooltip="Photovoltaic system without battery"-->
+        <!--src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZDVkNWQ1OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImluZm9faWNvbiIgY2xhc3M9ImNscy0xIiBkPSJNMTAtLjAwNWExMCwxMCwwLDEsMCwxMCwxMEExMCwxMCwwLDAsMCwxMC0uMDA1Wm0yLjA4MiwxNS41cS0wLjc3MS4zLTEuMjMyLDAuNDY0YTMuMjQ3LDMuMjQ3LDAsMCwxLTEuMDY4LjE2LDIuMTM3LDIuMTM3LDAsMCwxLTEuNDU0LS40NTZBMS40NzUsMS40NzUsMCwwLDEsNy44MDYsMTQuNWE0LjI0LDQuMjQsMCwwLDEsLjAzOC0wLjU1OGMwLjAyNi0uMTg5LjA2OC0wLjQsMC4xMjUtMC42NDJsMC42NDQtMi4yNzVjMC4wNTctLjIyLjEwNi0wLjQyNywwLjE0NS0wLjYyMWEyLjc1MywyLjc1MywwLDAsMCwuMDU3LTAuNTM2LDAuODI0LDAuODI0LDAsMCwwLS4xNzktMC42MDdBMS4wMTgsMS4wMTgsMCwwLDAsNy45NDcsOS4xYTEuOCwxLjgsMCwwLDAtLjUxMi4wNzZjLTAuMTc0LjA1My0uMzI1LDAuMS0wLjQ0OCwwLjE0OWwwLjE3LS43UTcuNzksOC4zNjEsOC4zNjgsOC4xNzhBMy41NzcsMy41NzcsMCwwLDEsOS40Niw3Ljk5M2EyLjA5MSwyLjA5MSwwLDAsMSwxLjQzMy40NDksMS40OTIsMS40OTIsMCwwLDEsLjUsMS4xNjVxMCwwLjE0OS0uMDM1LjUyM2EzLjUyOCwzLjUyOCwwLDAsMS0uMTI5LjY4N2wtMC42NDEsMi4yNjlxLTAuMDc4LjI3NC0uMTQxLDAuNjIzYTMuMjY2LDMuMjY2LDAsMCwwLS4wNjIuNTMyLDAuNzYzLDAuNzYzLDAsMCwwLC4yLjYxNiwxLjEzMywxLjEzMywwLDAsMCwuNy4xNjQsMS45OTMsMS45OTMsMCwwLDAsLjUzMS0wLjA4MywyLjkzNCwyLjkzNCwwLDAsMCwuNDI4LTAuMTQ0Wm0tMC4xMTMtOS4yMWExLjUzLDEuNTMsMCwwLDEtMS4wOC40MTZBMS41NDgsMS41NDgsMCwwLDEsOS44LDYuMjg0YTEuMzU5LDEuMzU5LDAsMCwxLDAtMi4wMjMsMS41MzUsMS41MzUsMCwwLDEsMS4wODQtLjQyMSwxLjUxOCwxLjUxOCwwLDAsMSwxLjA4LjQyMUExLjM2NCwxLjM2NCwwLDAsMSwxMS45NjQsNi4yODRaIi8+Cjwvc3ZnPgo=">-->
+        <span class="ml-0 mt-1" ><i class="fas fa-info-circle fa-2x infoIcon" tooltip="Photovoltaic system without battery"  [ngClass]="{'active' : storage === 'PV-without-storage'}"></i></span>
+      </div>
+      <div class="radio-btn1 d-flex ml-5">
+        <label class="radio-button">
+          <input type="radio" class="radio-button__input" [(ngModel)]="storage" value="PV-with-storage"
+                 name="PV-select"
+                 (change)="changeSeason()" >
+          <span class="radio-button__control"></span>
+          <span class="radio-button__label" style="color: #677171;   font-family: 'poppins';">{{'PV-with-storage' | translate }}</span>
+        </label>
+        <!--<img class="ml-1 mb-2" tooltip="Photovoltaic system with battery"-->
+        <!--src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZDVkNWQ1OwogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggaWQ9ImluZm9faWNvbiIgY2xhc3M9ImNscy0xIiBkPSJNMTAtLjAwNWExMCwxMCwwLDEsMCwxMCwxMEExMCwxMCwwLDAsMCwxMC0uMDA1Wm0yLjA4MiwxNS41cS0wLjc3MS4zLTEuMjMyLDAuNDY0YTMuMjQ3LDMuMjQ3LDAsMCwxLTEuMDY4LjE2LDIuMTM3LDIuMTM3LDAsMCwxLTEuNDU0LS40NTZBMS40NzUsMS40NzUsMCwwLDEsNy44MDYsMTQuNWE0LjI0LDQuMjQsMCwwLDEsLjAzOC0wLjU1OGMwLjAyNi0uMTg5LjA2OC0wLjQsMC4xMjUtMC42NDJsMC42NDQtMi4yNzVjMC4wNTctLjIyLjEwNi0wLjQyNywwLjE0NS0wLjYyMWEyLjc1MywyLjc1MywwLDAsMCwuMDU3LTAuNTM2LDAuODI0LDAuODI0LDAsMCwwLS4xNzktMC42MDdBMS4wMTgsMS4wMTgsMCwwLDAsNy45NDcsOS4xYTEuOCwxLjgsMCwwLDAtLjUxMi4wNzZjLTAuMTc0LjA1My0uMzI1LDAuMS0wLjQ0OCwwLjE0OWwwLjE3LS43UTcuNzksOC4zNjEsOC4zNjgsOC4xNzhBMy41NzcsMy41NzcsMCwwLDEsOS40Niw3Ljk5M2EyLjA5MSwyLjA5MSwwLDAsMSwxLjQzMy40NDksMS40OTIsMS40OTIsMCwwLDEsLjUsMS4xNjVxMCwwLjE0OS0uMDM1LjUyM2EzLjUyOCwzLjUyOCwwLDAsMS0uMTI5LjY4N2wtMC42NDEsMi4yNjlxLTAuMDc4LjI3NC0uMTQxLDAuNjIzYTMuMjY2LDMuMjY2LDAsMCwwLS4wNjIuNTMyLDAuNzYzLDAuNzYzLDAsMCwwLC4yLjYxNiwxLjEzMywxLjEzMywwLDAsMCwuNy4xNjQsMS45OTMsMS45OTMsMCwwLDAsLjUzMS0wLjA4MywyLjkzNCwyLjkzNCwwLDAsMCwuNDI4LTAuMTQ0Wm0tMC4xMTMtOS4yMWExLjUzLDEuNTMsMCwwLDEtMS4wOC40MTZBMS41NDgsMS41NDgsMCwwLDEsOS44LDYuMjg0YTEuMzU5LDEuMzU5LDAsMCwxLDAtMi4wMjMsMS41MzUsMS41MzUsMCwwLDEsMS4wODQtLjQyMSwxLjUxOCwxLjUxOCwwLDAsMSwxLjA4LjQyMUExLjM2NCwxLjM2NCwwLDAsMSwxMS45NjQsNi4yODRaIi8+Cjwvc3ZnPgo=">-->
+        <span class="ml-0 mt-1" ><i class="fas fa-info-circle fa-2x infoIcon" tooltip="Photovoltaic system with battery" [ngClass]="{'active' : storage === 'PV-with-storage'}"></i></span>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!--// Small device dropdown for storage-->
+  <div class="row mobile_btn  mb-3 mt-4">
+    <div class="col-12 w-100">
+      <select id="pv" (change)="changeSeason()" [(ngModel)]="storage" name="pv">
+        <option value="PV-without-storage" style="color: #677171;   font-family: 'poppins';">{{'pv-without-storage' | translate }}</option>
+        <option value="PV-with-storage" style="color: #677171;   font-family: 'poppins';">{{'PV-with-storage' | translate }}</option>
+      </select>
+
+    </div>
+  </div>
+
+  <!--// Small device dropdown for season-->
+  <div class="row mobile-all-season mb-3 mt-4">
+    <div class="col-12 w-100">
+      <select id="season" (change)="changeSeason()" [(ngModel)]="season" name="season">
+        <option value="yearly">{{'season.whole-year' | translate}}</option>
+        <option value="spring">{{'season.spring' | translate}}</option>
+        <option value="summer">{{'season.summer' | translate}}</option>
+        <option value="autumn">{{'season.autumn' | translate}}</option>
+        <option value="winter">{{'season.winter' | translate}}</option>
+      </select>
+
+    </div>
+  </div>
+  <!--// line chart graph-->
+  <div class="row mt-3 line-graph remove-space">
+  <div class="col-lg-10 col-xl-10 col-md-12 col-sm-12">
+    <div class="graph" style="display: block; width: 100% ">
+      <canvas baseChart #baseChart="base-chart"
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [colors]="lineChartColors"
+              [legend]="lineChartLegend"
+              [chartType]="lineChartType"
+              [plugins]="lineChartPlugins"
+      >
+      </canvas>
+    </div>
+    <div class="toggle ">
+      <div class="toggle-btn mb-5  mt-3  mx-auto">
+        <ui-switch size="small" color="yellow" [(ngModel)]="showProduction"
+                   (change)="toggleDataSeries('production')"></ui-switch>
+        <label >{{'typical-day.production' | translate }}[kWh]</label>
+        <ui-switch size="small" color="green" [(ngModel)]="showConsumption"
+                   (change)="toggleDataSeries('consumption')"></ui-switch>
+        <label>{{'typical-day.consumption' | translate }}[kWh]</label>
+        <ui-switch size="small" color="blue" [disabled]="disableBattery" [(ngModel)]="showBattery"
+                   (change)="toggleDataSeries('battery')"></ui-switch>
+        <label>{{'typical-day.battery' | translate }}[kWh]</label>
+        <ui-switch size="small" color="gray"  [(ngModel)]="showIndependence"
+                   checked="showIndependence" (change)="toggleDataSeries('independence')"></ui-switch>
+        <label>{{'typical-day.independence' | translate }}(%)</label>
+      </div>
+    </div>
+
+    <div class=" row toggle1 mb-5 ">
+      <div class="toggle-btn1 col-6  mt-3 ">
+        <ui-switch size="small" color="yellow" [(ngModel)]="showProduction"
+                   (change)="toggleDataSeries('production')"></ui-switch>
+        <label>{{'typical-day.production' | translate }}[kWh]</label>
+        <ui-switch size="small" color="green" [(ngModel)]="showConsumption"
+                   (change)="toggleDataSeries('consumption')"></ui-switch>
+        <label>{{'typical-day.consumption' | translate }}[kWh]</label>
+      </div>
+      <div class=" toggle-btn1 col-6 mt-3 mb-4">
+        <ui-switch size="small" color="blue" [disabled]="disableBattery" [(ngModel)]="showBattery"
+                   (change)="toggleDataSeries('battery')"></ui-switch>
+        <label>{{'typical-day.battery' | translate }}[kWh]</label>
+        <ui-switch size="small" color="gray"  [(ngModel)]="showIndependence"
+                   checked="showIndependence" (change)="toggleDataSeries('independence')"></ui-switch>
+        <label>{{'typical-day.independence' | translate }}(%)</label>
+      </div>
+    </div>
+    <div class="row mobile-toggle-btn mb-5 ">
+      <div class="d-flex mb-2 justify-content-start">
+        <ui-switch size="small" color="yellow" [(ngModel)]="showProduction"
+                   (change)="toggleDataSeries('production')"></ui-switch>
+        <label>{{'typical-day.production' | translate }}[kWh]</label></div>
+      <div class="d-flex mb-2 justify-content-start">
+        <ui-switch size="small" color="green" [(ngModel)]="showConsumption"
+                   (change)="toggleDataSeries('consumption')"></ui-switch>
+        <label>{{'typical-day.consumption' | translate }}[kWh]</label></div>
+      <div class="d-flex mb-2 justify-content-start">
+        <ui-switch size="small" color="blue" [(ngModel)]="showBattery"
+                   [disabled]="disableBattery" (change)="toggleDataSeries('battery')"></ui-switch>
+        <label>{{'typical-day.battery' | translate }}[kWh]</label></div>
+      <div class="d-flex justify-content-start">
+        <ui-switch size="small"  color="gray" [(ngModel)]="showIndependence"
+                   [checked]="checkIndependence"  (change)="toggleDataSeries('independence')"></ui-switch>
+        <label>{{'typical-day.independence' | translate }}(%)</label></div>
+    </div>
+  </div>
+
+    <!--// Desktop dropdown for season-->
+    <div class="col-lg-2 w-100 all-season float-right">
+      <!--<div class="all-season float-right">-->
+        <!--<select id="season" (change)="changeSeason()" [(ngModel)]="season" name="season"-->
+                <!--style="color: white;background: #007D32">-->
+          <!--<option value="yearly">Whole Year</option>-->
+          <!--<option value="spring">Spring</option>-->
+          <!--<option value="summer">Summer</option>-->
+          <!--<option value="autumn">Autumn</option>-->
+          <!--<option value="winter">Winter</option>-->
+        <!--</select>-->
+        <kendo-dropdownlist
+          [data]="listItems"
+          textField="text"
+          valueField="value"
+          [valuePrimitive]="true"
+          (valueChange) = "changeSeason()"
+          [(ngModel)]="season"
+
+        >
+        </kendo-dropdownlist>
+      <!--</div>-->
+    </div>
+  </div>
+  <!--<div class="row">-->
+    <!--<div class="col-12">-->
+      <!--<div class="next-button mb-3 float-right">-->
+        <!--<b type="button" class="text-uppercase mr-2" style="cursor: pointer" (click)="next()">NEXT</b>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+</div>

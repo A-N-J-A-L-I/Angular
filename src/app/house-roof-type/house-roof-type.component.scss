@@ -1,0 +1,134 @@
+.roof-type-selector{
+  text-align: center;
+  cursor: pointer;
+  border: dashed 1px #d5d5d5;
+  padding: 20px;
+  .house-type-sectors{
+    width: 85%;
+    margin: auto;
+  }
+  svg{
+    //fill: #d5d5d5;
+    fill:#C2C6C6;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.roof-type-selector.selected,
+.roof-type-selector:hover{
+  svg{
+    fill: #007d32
+  }
+  label{
+    color: #007d32;
+    font-family: 'poppins';
+  }
+}
+//.roof-border {
+//  border: dashed 1px gray;
+//}
+//.roof-type-selector {
+//  position: relative;
+//  display: inline-block;
+//
+//  .roof-type-icon-wrapper {
+//    position: absolute;
+//    width: 24%;
+//    height: 30%;
+//    cursor: pointer;
+//
+//    svg {
+//      fill: red;
+//      width: 100%;
+//      height: 100%;
+//    }
+//  }
+//
+//  .roof-type-icon-wrapper.first {
+//    left: 20%;
+//    top: 12%;
+//  }
+//
+//  .roof-type-icon-wrapper.second {
+//    right: 20%;
+//    top: 13%;
+//  }
+//
+//  .roof-type-icon-wrapper.third {
+//    right: 10%;
+//    top: 40%;
+//  }
+//
+//  .roof-type-icon-wrapper.fourth {
+//    right: 40%;
+//    bottom: 8%;
+//  }
+//
+//  .roof-type-icon-wrapper.fifth {
+//    left: 10%;
+//    bottom: 27%;
+//  }
+//}
+
+:host ::ng-deep .roof-type-icon-wrapper svg {
+  fill: #D5D5D5;
+  width: 100%;
+  height: 100%;
+}
+:host ::ng-deep .roof-type-icon-wrapper.selected svg {
+  fill: #007d32;
+  width: 100%;
+  height: 100%;
+}
+
+
+:host ::ng-deep .roof-type-icon-wrapper:hover svg {
+  fill: #007d32 ;
+  width: 100%;
+  height: 100%;
+}
+
+/*.roof-type-icon-wrapper:hover {
+  :host ::ng-deep svg {
+    fill: #007d32;
+    width: 100%;
+    height: 100%;
+  }
+}*/
+
+.both-side-toggle-wrapper{
+  margin-top: 3em;
+  position: relative;
+  display: initial;
+  padding-top: 0.5em;
+  ui-switch{
+    top: 0.5em;
+    position: absolute;
+    /* display: unset; */
+    width: 2em;
+  }
+  label{
+    //position: absolute;
+    top: 0em;
+    margin-left: 3em;
+    padding-left: 0em;
+    font-family: 'poppins';
+  }
+}
+.head {
+  justify-content: space-between;
+}
+.row.remove-space {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+.step-heading {
+  font-family: 'poppins';
+}

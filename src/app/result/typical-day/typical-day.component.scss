@@ -1,0 +1,195 @@
+
+.radio-btn {
+  margin-bottom: 1.5rem !important;
+}
+
+.title {
+  color: #353535;
+  margin-bottom: 2rem !important;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.continue-btn {
+
+  width: 160px;
+  background-color: #007d32;
+  color: #fff;
+
+}
+
+.side-radio-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.chart1 {
+  position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+  .side-radio {
+    display: none;
+  }
+  .radio-btn {
+    display: none;
+  }
+
+}
+
+.mobile_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile_btn {
+    display: block;
+  }
+  .side-radio-btn {
+    display: none;
+
+  }
+  .toggle-btn {
+    display: none;
+  }
+
+}
+
+.mobile_btn {
+  display: none;
+}
+
+.season-carousel {
+  display: none;
+}
+
+.mobile-toggle-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .mobile_btn {
+    display: block;
+  }
+
+  .mobile-toggle-btn {
+    flex-direction: column;
+    display: block;
+    margin: auto;
+    max-inline-size: fit-content;
+    ui-switch {
+      top: 0.5em;
+      width: 2em;
+      margin-left: 1em;
+    }
+    label {
+      top: 0em;
+      margin-left: .8em;
+      padding-left: 0em;
+    }
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .season-carousel {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .continue-btn {
+    display: none;
+  }
+}
+
+select {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+}
+
+option {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.typical-day{
+margin-bottom: 4rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.quotation {
+  background-color: #007d32;
+  height: 45px;
+  cursor: pointer;
+  letter-spacing: .75px;
+}
+
+b {
+  color: #005622;
+  cursor: pointer;
+}
+
+.pre, .next {
+  height: 20px;
+  width: 20px;
+}
+
+.prenext {
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 766px) {
+  footer {
+    display: none;
+  }
+
+}
+//@media only screen
+//and (min-width: 720px)
+//and (max-width: 1600px) {
+//  .graph {
+//   width: 525px;
+//    height: 265px;
+//    justify-content: center;
+//  }
+//}
+
+::ng-deep .carousel-control-prev-icon {
+  background-image: url('src/assets/left.png');
+}
+
+::ng-deep .carousel-control-next-icon {
+  font-weight: 900;
+  background-image: url('src/assets/right.png');
+}
+
+::ng-deep .carousel-inner {
+  text-align: center;
+}
+
+
+.toggle-btn {
+  margin-top: 3em;
+  position: relative;
+  padding-top: 0.5em;
+  ui-switch{
+    top: 0.5em;
+    position: absolute;
+    width: 2em;
+  }
+  label{
+    margin-right: 2em;
+    top: 0em;
+    margin-left: 3em;
+    padding-left: 0em;
+  }
+}
+
+

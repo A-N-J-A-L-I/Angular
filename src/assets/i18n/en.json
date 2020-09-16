@@ -1,0 +1,172 @@
+{
+  "To-change": "EDIT",
+  "Continue": "Continue",
+  "Contact": "Contact",
+  "Back": "Back",
+  "Preparing-Results": "Fetching  Results...",
+  "content": "We are now calculating your personal solar energy system for the next 25 years. This is done on the",
+  "content1": " basis of",
+  "content2": "local energy prices, irradiation data and a typical consumption profile for your house. This gives you an",
+  "content3": "excellent basis for your decision.",
+  "pv-without-storage": "PV Without Storage",
+  "PV-with-storage": "PV With Storage",
+  "variation-selection": "Variation Selection",
+  "season": {
+    "whole-year": "Whole year",
+    "autumn": "autumn",
+    "winter": "winter",
+    "summer": "summer",
+    "spring": "spring"
+  },
+  "address": {
+    "solar": "Solar Calculator",
+    "content": "Enter your address to discover all the energy, economics and ecologic advantages of having solar energy on your roof."
+  },
+  "financial": {
+    "label": "Financial",
+    "total-investment": "Total investment inc. VAT of ",
+    "payback": "Payback time of ",
+    "payback-year": "years",
+    "monthly-saving": "Monthly saving in energy bill of ",
+ "energy-cost-saving": "Energy cost saving in 25 years of ",
+    "bank-interest": "Bank interest rate                            ",
+    "solar-irr": "Solar IRR             ",
+    "eleBillBeforeSolar": "Electricity bill before solar system  ",
+    "eleBillAfterSolar": "Electrcity bill after solar system",
+    "investment" : "Investment including VAT and subside",
+    "incomeOver25": "Income over 25 years deducted operating cost"
+
+  },
+  "next" : "NEXT",
+
+  "independence": {
+    "label": "Independence",
+    "content": "How much of your electricity needs comes directly from your roof?"
+  },
+  "consumption1": {
+    "label": "Consumption",
+    "content": "How much of your electricity needs comes directly from your roof?",
+    "solar-system": "Solar  system:",
+    "battery-size": "Battery size:",
+    "annual-production": "Annual production:",
+    "electricity-generation-costs": "Electricity generation costs:"
+  },
+  "typical-day": {
+    "label": "A Typical Day",
+    "content": "A typical day",
+    "production": "Solar Production",
+    "consumption": "Self Consumption",
+    "battery": "Battery charging",
+    "independence": "Independence"
+  },
+  "economic": {
+    "label": "Summary",
+    "content": "System summary",
+    "solar-system": "Solar  system",
+    "battery-size": "Battery size",
+    "annual-production": "Annual production",
+    "electricity-generation-costs": "Electricity generation costs:"
+  },
+  "sustainability": {
+    "label": "Sustainability",
+    "content": "An important contribution to the environment",
+    "globe": "Drive your car ",
+    "globe1": "km around the world.",
+    "foot": "Reduce your CO2 footprints by",
+    "tree": "Save as much CO2 equivalent to planting ",
+    "tree1": "trees per year."
+  },
+  "how-futher": {
+    "label": "How Futher",
+    "content": "Thank you very much for your interest",
+    "content1": "You now know what the sun can do for you. We would be happy to provide you with a quotation for your future solar system."
+  },
+  "Roof-area": {
+    "label": "Roof Area",
+    "content": "Mark the entire roof area of your house with the pencil",
+    "Floor-plan": "Floor plan:",
+    "Manual-label": "If you know the usable roof area, you can enter it manually:",
+    "Manual-entry": "Manual entry:",
+    "Usable-area": "Usable Area"
+  },
+  "House-type": {
+    "label": "House-type",
+    "label1": "House Type",
+    "content": "Choose your house type.",
+    "Occupy-two-sides": "Occupy Both Sides"
+  },
+  "Roof-pitch": {
+    "label": "Roof pitch",
+    "label1": "Roof Pitch",
+    "content": "Choose your roof pitch or enter it manually.",
+    "Manual-input": "Manual input:",
+    "placeholder": "Enter the roof pitch manually"
+  },
+  "alignment": {
+    "label": "Alignment",
+    "Orientation": "Orientation",
+    "content": "Align your house as per the satellite pic.",
+    "slider-content": "Use the slider to rotate roof."
+  },
+  "priority": {
+    "Priority": "Priority",
+    "label": "Priority list",
+    "content": "Select your motivation to use solar by priority.",
+    "selected": "Selected Priority",
+    "click": "Click to select your priority"
+  },
+  "Consumption": {
+    "label": "Annual Consumption",
+    "content": "Average Consumption",
+    "num-of-people": "Number of people in your household:",
+    "num-of-people-placeholder": "Number of people in your house",
+    "yearly-consumption": "Yearly Energy Consumption",
+    "supplier": "Select Energy Supplier",
+    "skip": "Skip"
+  },
+  "Hot-water": {
+    "label": "Hot water",
+    "label1": "Hot Water",
+    "content": "How do you heat your hot water?",
+    "Electric-boiler": "Electric Boiler",
+    "Heat-pump": "Heat Pump Boiler",
+    "oil-gas": "Oil, Gas, Wood, District Heating"
+  },
+  "heater": {
+    "label": "Heater",
+    "content": "How do you heat your building?",
+    "Electric-boiler": "Electric Heater",
+    "Heat-pump": "Heat Pump",
+    "oil-gas": "Oil, Gas, Wood, District Heating"
+  },
+  "Supplier": {
+    "label": "Energy supplier",
+    "label1": "Select Energy Supplier:",
+    "content": "Please enter if you know",
+    "sorry-msg": "Sorry, No Supplier in your area"
+  },
+  "contact-form": {
+    "label": "Request a quote",
+    "first-name": "First Name",
+    "last-name": "Last Name",
+    "phone": "Phone Number",
+    "email": "E-mail Address",
+    "company-name": "Company Name",
+    "zip-code": "Zip Code",
+    "city": "City",
+    "country": "Country",
+    "project-address": "Project Address",
+    "street-address": "Street Address",
+    "interest": "I am also interested in:",
+    "heat-pump": "Heat Pump",
+    "charge-station": "Charging station",
+    "energy": "Energy management",
+    "message": "Leave a message",
+    "allow": "I allow the processing of my data for advice and information purposes about solar power systems.",
+    "submit": "Submit",
+    "data": "What happen with my data?"
+  },
+  "Location": {
+    "location": "Location"
+  }
+}

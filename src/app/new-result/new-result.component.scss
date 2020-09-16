@@ -1,0 +1,80 @@
+
+.result {
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #E5E9EC;
+  //height: 117vh;
+  position: relative;
+}
+.btnnext {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #377D33;
+  font-size: 16px;
+  font-weight: 500;
+}
+.quotation {
+  justify-content: flex-end;
+}
+
+.all-button {
+  z-index: 0;
+}
+.quotation {
+  display: none;
+}
+//.quote-request {
+//  position: absolute;
+//  bottom:50px;
+//  right: 20px;
+//}
+//@media only screen and (max-width: 769px) {
+//  .quote-request {
+//    display: none;
+//  }
+//  .quotation {
+//    display: block;
+//  }
+//}
+
+@media only screen and (min-width: 1100px) and (max-width: 2000px ) {
+  .tab-content {
+    height: 660px;
+  }
+}
+//@media only screen and (min-width: 920px) and (max-width: 1170px ) {
+//  .tab-content {
+//    height: 560px;
+//  }
+//}
+//
+//@media only screen and (min-width: 770px) and (max-width: 1100px) {
+//  .result {
+//    height: 130vh;
+//  }
+//}
+//@media only screen and (min-width: 530px) and (max-width: 770px) {
+//  .result {
+//    height: 140vh;
+//  }
+//}
+//
+//@media only screen and (max-width: 530px) {
+//  .result {
+//    height: 230vh;
+//  }
+//}
+
+.my-button {
+  background: #D9E0E4;
+  color: #949BA8;
+  border-color: lightgrey;
+  font-family: 'poppins';
+  white-space:normal;
+
+  &.active {
+    background: #007d32;
+  }
+}

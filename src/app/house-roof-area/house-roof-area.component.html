@@ -1,0 +1,39 @@
+<div>
+  <!--<h3 class="step-heading">{{'Roof-area.label' | translate }}</h3>-->
+  <div class="d-flex head">
+    <h3 class="step-heading">{{'Roof-area.label' | translate }}</h3>
+    <p class="float-right" style="color: gray; font-family: 'poppins';">STEP 1/8</p>
+  </div>
+ <div class=" d-flex flex-column">
+    <p style=" font-family: 'poppins';">{{'Roof-area.content' | translate }} [<span  class='fas fa-pen'>].</span></p>
+ </div>
+  <br>
+  <div class="text-center">
+    <img class="animated-geo-image" src="../../assets/roofgif.gif" alt="">
+  </div>
+  <div class="spacer-3"></div>
+  <div class="form-container">
+    <!--<div class="row form-group ">-->
+      <!--<label class="col-4 col-form-label">-->
+        <!--{{'Roof-area.Floor-plan' | translate }}-->
+      <!--</label>-->
+      <!--<div class="col-5">-->
+        <!--<input type="number" readonly class="form-control" [(ngModel)]="roofArea" placeholder="{{'Roof-area.Usable-area' | translate }}, m²">-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="spacer-2"></div>
+    <p class="text-center">{{'Roof-area.Manual-label' | translate }}</p>
+    <div class="spacer-2"></div>
+    <div class="row form-group ">
+      <!--<label class="col-4 col-form-label">-->
+        <!--{{'Roof-area.Manual-entry' | translate }}-->
+      <!--</label>-->
+      <div class="col-12">
+        <input type="number" class="form-control w-100" [(ngModel)]="roofArea"  placeholder="{{'Roof-area.Usable-area' | translate }}(m²)">
+      </div>
+    </div>
+    <div class="text-center" >
+      <button class="btn btn-primary w-100" (click)="submitForm()">{{'Continue' | translate }}</button>
+    </div>
+  </div>
+</div>

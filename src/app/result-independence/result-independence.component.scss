@@ -1,0 +1,153 @@
+.independence {
+  position: relative;
+}
+
+.title-header {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'poppins';
+}
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  //justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  //margin: 20px auto;
+  width: 200px;
+  //width: 123px;
+  height: 250px;
+  margin-right: 4px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.card .title {
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 17px;
+  //margin-top: 180px;
+  height: 40px;
+}
+
+.card .graph {
+  text-align: center;
+
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
+}
+
+.mobile_btn {
+  display: none;
+}
+
+select {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+}
+
+option {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  color: #677171;
+  border-radius: 4px;
+}
+
+.next-button {
+  //margin-top: 210px;
+  color: #377D33;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+@media only screen and (max-width: 960px) {
+  .mobile_btn {
+    display: block;
+  }
+  .radio-btn {
+    display: none;
+  }
+}
+
+.whole-year {
+  background-color: #E4E8EB;
+}
+
+.spring {
+  background-color: #E0FADF;
+}
+
+.autumn {
+  background-color: #EFE1DA;
+}
+
+.winter {
+  background-color: #E0F4F8;
+}
+
+.summer {
+  background-color: #FFFAE5;
+}
+
+.title-autumn {
+  color: #B16848;
+  font-family: 'poppins';
+
+}
+
+.title-spring {
+  color: #2F9E6A;
+  font-family: 'poppins';
+}
+
+.title-summer {
+  color: #FFCC00;
+  font-family: 'poppins';
+}
+
+.title-winter {
+  color: #64C7DC;
+  font-family: 'poppins';
+}
+
+.title-year {
+  color: #4D5859;
+  font-family: 'poppins';
+}
+
+.fa-2x {
+  font-size: 1.5em;
+}
+
+.infoIcon {
+  color: #B2D7FF;
+
+  &.active {
+    color: #007AFF;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1200px) {
+  .card {
+    width: 125px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1333px) {
+  .card {
+    width: 170px;
+  }
+}
+@media only screen and (min-width: 1333px) and (max-width: 1560px) {
+  .card {
+    width: 180px;
+  }
+}

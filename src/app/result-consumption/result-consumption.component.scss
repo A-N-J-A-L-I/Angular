@@ -1,0 +1,168 @@
+.fa-2x {
+  font-size: 1.5em;
+}
+.infoIcon {
+  color: #B2D7FF;
+
+  &.active {
+    color: #007AFF;
+  }
+}
+
+.title-header {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'poppins';
+}
+
+.mobile_btn{
+  display: none;
+}
+select {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+}
+option {
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  box-sizing: border-box;
+  color: #677171;
+  border-radius: 4px;
+  background: white;
+}
+.next-button {
+  //margin-top: 110px;
+  color: #377D33;
+  font-size: 16px;
+  font-weight: 500;
+}
+.mobile-all-season{
+  display: none;
+}
+@media only screen and (max-width: 1050px) {
+  .mobile_btn {
+    display: block!important;
+  }
+  .radio-btn{
+    display: none!important;
+  }
+  .mobile-all-season {
+    display: block!important;
+  }
+  .all-season {
+    display: none!important;
+  }
+  .img1 {
+    height: 80px!important;
+  }
+  .summary {
+    display: none!important;
+  }
+}
+//.img1 {
+//  height: 100px;
+//}
+
+
+.summary {
+  //height: 213px;
+  width: 85%;
+  background-color: #E5E9EC;
+  margin-top: 30px;
+  float: right;
+}
+.summary-title {
+  font-size: 22px;
+  color: #B3B9BB;
+  font-family: 'poppins';
+}
+.summary-value {
+  font-size: 15px ;
+  color: #858D8F;
+  font-family: 'poppins';
+}
+.all-value {
+  font-size: 20px;
+  color: #3E494A;
+  font-weight: 600;
+}
+//@media only screen and (min-width: 770px) {
+//  .graph {
+//    margin-left: 3rem;
+//  }
+//}
+.kwh {
+  font-size: 13px;
+  color: #3E494A;
+  font-family: 'poppins';
+}
+::ng-deep .k-dropdown .k-dropdown-wrap {
+  color: white!important;
+  background-color: #005622 !important;
+  background-image: none !important;
+  width: 110px;
+}
+::ng-deep .k-popup {
+  background-color: white!important;
+}
+::ng-deep .k-list .k-item.k-state-selected  {
+  background-color: lightgrey!important;
+  color: #1B1E24;
+}
+::ng-deep .k-list .k-item.k-state-selected:hover {
+  background-color: #EFF2F3!important;
+  color: #1B1E24;
+}
+::ng-deep .k-list .k-item.k-state-focused {
+ box-shadow: none;
+}
+.house-img {
+ width: 300px;
+}
+@media only screen and (min-width: 1100px) and (max-width: 1450px) {
+  .house-img {
+    width: 200px ;
+  }
+  .all-value {
+    font-size: 17px;
+  }
+  .kwh {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .house-img {
+    width: 150px ;
+  }
+  .all-value {
+    font-size: 12px;
+  }
+  .kwh {
+    font-size: 9px;
+  }
+}
+.table {
+  display:table;
+  width:100%;
+}
+.tr {
+  display:table-row;
+  .summary-value {
+    display:table-cell;
+    width:15%;
+    padding-left: 15px;
+  }
+  .d2 {
+    display:table-cell;
+    text-align:center;
+    width:2%;
+  }
+  .all-value{
+    display:table-cell;
+    text-align:right;
+    width:82%;
+    display: table-row;
+    padding-right: 5px;
+  }
+}
+
