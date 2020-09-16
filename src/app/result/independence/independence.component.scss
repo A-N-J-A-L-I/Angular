@@ -156,13 +156,13 @@ b {
 }
 
 ::ng-deep .carousel-control-prev-icon {
-  background-image: url('src/assets/left.png');
+  background-image: url('/src/assets/left.png');
 }
 
 
 ::ng-deep .carousel-control-next-icon{
   font-weight: 900;
-  background-image: url('src/assets/right.png');
+  background-image: url('/src/assets/right.png');
 }
 ::ng-deep .carousel-inner {
   text-align: center;
